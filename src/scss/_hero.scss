@@ -1,0 +1,248 @@
+.hero {
+  @include flexCenter;
+  height: 100vh;
+
+  @include respond(phone) {
+    height: 100%;
+  }
+
+  &__info {
+    flex-basis: 40%;
+    width: 95%;
+
+    @include respond(big-desk) {
+      flex-basis: 25%;
+    }
+
+    @include respond(tab-port) {
+      text-align: center;
+      margin: 0;
+      width: 85%;
+    }
+
+    @include respond(phone) {
+      width: 95%;
+      margin-bottom: 5rem;
+    }
+
+    & h1 {
+      font-size: 3.3rem;
+      font-weight: bold;
+    }
+
+    & p {
+      font-size: 1.25rem;
+      @include ParagraphSpaceHeight;
+      color: $text-color;
+      margin: 1rem 0;
+      font-weight: 200;
+    }
+
+    &--wave {
+      display: inline-block;
+      animation: wave-animation 3s linear infinite;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1rem;
+    transition: color 0.3s ease-in-out;
+
+    & a {
+      font-size: 2.5rem;
+      color: rgba(#000, 0.55);
+    }
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+  }
+
+  &__tech {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+
+    &__mobile {
+      display: flex;
+
+      @include respond(tab-port) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    &--border {
+      position: relative;
+      content: "";
+      height: 2rem;
+      width: 0.15rem;
+      background-color: $primary-color;
+      margin-left: 1rem;
+
+      @include respond(tab-port) {
+        height: 0.15rem;
+        width: 6rem;
+        margin-left: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+    & li {
+      list-style: none;
+      border-radius: 100%;
+      margin-left: 1rem;
+      padding: 0.6rem;
+      background-color: #f7f5f5;
+      box-shadow: 0 0.3rem 0.3rem rgba(#000, 0.4);
+
+      @include respond(tab-port) {
+        margin-top: 1rem;
+      }
+    }
+
+    & li img {
+      height: 2.2rem;
+      width: 2.2rem;
+      text-align: center;
+    }
+  }
+
+  &__git,
+  &__link {
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__git:hover {
+    color: #6e5494;
+  }
+
+  &__link:hover {
+    color: #0072b1;
+  }
+
+  &__img {
+    flex-basis: 30%;
+    position: relative;
+    margin-left: 5rem;
+    width: 100%;
+    height: 20rem;
+
+    @include respond(tab-land) {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+      height: 15rem;
+      width: 100%;
+      margin: 5rem 0 15rem;
+    }
+
+    @include respond(iphone) {
+      margin-top: 5rem;
+      margin-left: 0;
+    }
+  }
+}
+
+.morph-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 60% 40%;
+  animation: morph 7s infinite, rainbow 15s linear infinite;
+  opacity: 1;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  border: 6px solid rgb(0, 0, 0);
+
+  @include respond(tab-port) {
+    width: 25rem;
+    height: 20rem;
+  }
+  @include respond(phone) {
+    margin-left: 2rem;
+    width: 20rem;
+    height: 15rem;
+  }
+}
+
+.image {
+  position: relative;
+  height: 28rem;
+  width: 25rem;
+
+  @include respond(tab-port) {
+    bottom: 2rem;
+  }
+  @include respond(phone) {
+    width: 20rem;
+    bottom: 4rem;
+    height: fit-content;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    border-color: #ff7f50;
+  }
+  14% {
+    border-color: #1d2951;
+  }
+  28% {
+    border-color: #98ddca;
+  }
+  42% {
+    border-color: #fff9b0;
+  }
+  57% {
+    border-color: #4aa0d5;
+  }
+  71% {
+    border-color: #d7b8ab;
+  }
+  85% {
+    border-color: #b57edc;
+  }
+  100% {
+    border-color: #ff7f50;
+  }
+}
+
+@keyframes wave-animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}

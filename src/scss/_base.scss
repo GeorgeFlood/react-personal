@@ -1,0 +1,30 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    overflow-x: hidden;
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desk) {
+    font-size: 75%;
+  }
+}
