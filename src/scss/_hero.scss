@@ -64,6 +64,10 @@
     flex-wrap: wrap;
     align-items: center;
 
+    @include respond(med-desk) {
+      flex-wrap: nowrap;
+    }
+
     @include respond(tab-port) {
       flex-direction: column;
     }

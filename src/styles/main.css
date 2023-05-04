@@ -415,6 +415,11 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+@media (min-width: 56.375em) and (max-width: 74.375em) {
+  .hero__tech {
+    flex-wrap: nowrap;
+  }
+}
 @media (max-width: 56.25em) {
   .hero__tech {
     flex-direction: column;
