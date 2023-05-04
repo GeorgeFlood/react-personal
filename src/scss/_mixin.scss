@@ -114,7 +114,7 @@
     }
   }
   @if $breakpoint == med-desk {
-    @media (min-width: 56.375em) and (max-width: 85.9em) {
+    @media (min-width: 74.375em) and (max-width: 85.9375em) {
       @content;
     }
   }
