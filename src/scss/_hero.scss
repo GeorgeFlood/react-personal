@@ -137,6 +137,10 @@
     width: 100%;
     height: 20rem;
 
+    @include respond(big-desk) {
+      flex-basis: 25%;
+    }
+
     @include respond(tab-land) {
       width: 50%;
       margin: 0 auto;
