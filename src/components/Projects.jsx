@@ -11,7 +11,7 @@ const Projects = () => {
       imageSrc: `${dictionary}`,
       name: "Dictionary App 📚",
       description:
-        "Experience the convenience of a Dictionary App that swiftly delivers word definitions and noun forms. Unveil the power of language with this compact and user-friendly tool, your ideal pocket companion for expanding your vocabulary and mastering word usage with ease.",
+        "Discover a swift Dictionary App for quick word definitions and noun forms. Try enhance your vocabulary and master English effortlessly with this handy pocket companion.",
       tech: ["React", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/dictionary-app",
       liveDemoLink: "https://georgeflood.github.io/dictionary-app/",
@@ -29,7 +29,7 @@ const Projects = () => {
       imageSrc: `${weather}`,
       name: "Weather App ☀️",
       description:
-        "Introducing a sleek, classic weather app! Offering accurate forecasts and user-friendly design, this app combines functionality with a visually appealing interface, demonstrating my commitment to creating delightful user experiences.",
+        " a sleek weather app with precise forecasts and an intuitive design. Merging functionality and aesthetics, it highlights my commitment to exceptional user experiences.",
       tech: ["React", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/weatherApp-react",
       liveDemoLink: "https://georgeflood.github.io/weatherApp-react/",
@@ -38,7 +38,7 @@ const Projects = () => {
       imageSrc: `${space}`,
       name: "Space Tourism 🚀",
       description:
-        "Explore the cosmos with a captivating space-tourism website, designed to ignite your interstellar wanderlust. Navigate the stars effortlessly through stunning visuals and an intuitive interface, showcasing the boundless possibilities of cosmic adventures.",
+        "Uncover the universe with a captivating site that fuels your space cravings. Effortlessly explore the cosmos using eye-catching visuals and smooth navigation, showcasing limitless celestial escapades.",
       tech: ["HTML", "Javascript", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/space-tourism",
       liveDemoLink: "https://georgeflood.github.io/space-tourism/index.html",
@@ -47,7 +47,7 @@ const Projects = () => {
       imageSrc: `${dashboard}`,
       name: "Dashboard 📊",
       description:
-        "Experience a thoughtfully designed dashboard, seamlessly blending style and functionality. With its intuitive layout and visually appealing interface, this dashboard simplifies data management and enhances user interaction for an efficient and enjoyable experience.",
+        "Discover a well-designed dashboard, merging style and functionality. Its intuitive layout and visually appealing interface streamline data management and user interaction for an efficient, enjoyable experience.",
       tech: ["HMTL", "Javascript", "CSS"],
       githubLink: "https://github.com/GeorgeFlood/project-7",
       liveDemoLink: "https://georgeflood.github.io/project-7/",
@@ -56,7 +56,7 @@ const Projects = () => {
       imageSrc: `${portfolio}`,
       name: "Old Portfolio 🎨",
       description:
-        "My previous portfolio, a display of my creativity and skill, as I've evolved as a designer, I've embraced a more modern, clean aesthetic to better showcase my work and deliver an enhanced user experience, highlighting my growth and adaptability.",
+        "My previous portfolio reflecting creativity and skill. As a designer, I've adopted a modern, clean aesthetic to showcase work and improve user experience, showcasing my growth and adaptability.",
       tech: ["HMTL", "Javascript", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/hello-world-portfolio",
       liveDemoLink: "https://georgeflood.github.io/hello-world-portfolio/",

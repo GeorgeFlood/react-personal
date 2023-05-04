@@ -35,7 +35,7 @@
 @mixin CardContainer {
   position: relative;
   display: flex;
-  min-width: 100%;
+  width: 100%;
   min-height: 25rem;
   margin-top: 5rem;
   border-radius: 0.8rem;

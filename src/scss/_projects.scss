@@ -83,6 +83,7 @@
     &--links {
       display: flex;
       justify-content: space-around;
+      margin-top: 1rem;
       align-items: center;
     }
 
@@ -121,9 +122,9 @@
   }
 
   &--githubIcon {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   &--ExternalIcon {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
