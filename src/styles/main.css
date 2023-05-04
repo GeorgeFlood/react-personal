@@ -415,7 +415,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
-@media (min-width: 56.375em) and (max-width: 74.375em) {
+@media (min-width: 56.375em) and (max-width: 85.9em) {
   .hero__tech {
     flex-wrap: nowrap;
   }
