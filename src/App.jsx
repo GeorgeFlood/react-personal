@@ -1,4 +1,3 @@
-import "./styles/main.css";
 import Navbar from "./components/Navbar";
 import MobileNav from "./components/MobileNav";
 import Hero from "./components/Hero";

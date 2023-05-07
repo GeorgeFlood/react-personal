@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import myImg from "../../public/Images/me.jpg";
-import html from "../../public/images/html.svg";
-import css from "../../public/images/css.svg";
-import sass from "../../public/images/sass.svg";
-import tailwind from "../../public/images/tailwind.svg";
-import Javascript from "../../public/images/javascript.svg";
-import react from "../../public/images/react.svg";
+import myImg from "../../Images/me.jpg";
+import html from "../../images/html.svg";
+import css from "../../images/css.svg";
+import sass from "../../images/sass.svg";
+import tailwind from "../../images/tailwind.svg";
+import Javascript from "../../images/javascript.svg";
+import react from "../../images/react.svg";
 
 const Hero = () => {
   return (

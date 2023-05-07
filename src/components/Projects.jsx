@@ -1,10 +1,10 @@
 import ProjectCard from "./ProjectCards";
-import dictionary from "../../public/screenshots/dictionary.png";
-import signup from "../../public/screenshots/signup.png";
-import weather from "../../public/screenshots/weather.png";
-import space from "../../public/screenshots/space.png";
-import portfolio from "../../public/screenshots/oldportfolio.png";
-import dashboard from "../../public/screenshots/dashboard.png";
+import dictionary from "../../Images/screenshots/dictionary.png";
+import signup from "../../Images/screenshots/signup.png";
+import weather from "../../Images/screenshots/weather.png";
+import space from "../../Images/screenshots/space.png";
+import portfolio from "../../Images/screenshots/oldportfolio.png";
+import dashboard from "../../Images/screenshots/dashboard.png";
 const Projects = () => {
   const projectData = [
     {
