@@ -1,0 +1,130 @@
+.projects {
+  margin: 5rem 15%;
+
+  @include respond(phone) {
+    margin: 5rem 0;
+  }
+  @include respond(big-desk) {
+    margin: 5rem 30%;
+  }
+
+  &__img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    img {
+      // width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__intro {
+    @include respond(phone) {
+      margin: 0 15%;
+    }
+    & h3 {
+      @include H3;
+    }
+    & h4 {
+      @include H4;
+    }
+  }
+
+  &__container {
+    @include CardContainer;
+    display: flex;
+    opacity: 0;
+    position: relative;
+
+    @include respond(tab-port) {
+      padding: 0;
+      margin: 5rem 1rem 0 1rem;
+      width: auto;
+    }
+
+    &--img {
+      @include CardImg;
+    }
+
+    &--info {
+      @include cardInfo;
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+
+      & h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: $primary-color;
+      }
+      & p {
+        @include ParagraphSpaceHeight;
+        margin: 0.5rem 0;
+        font-size: 1.1rem;
+      }
+    }
+
+    &--tech {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      & p {
+        background-color: $background-color;
+        padding: 0.5rem;
+        border-radius: 0.3rem;
+        font-weight: 700;
+        box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.1);
+      }
+    }
+
+    &--links {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+      align-items: center;
+    }
+
+    &--github,
+    &--live {
+      @include ProjectCardAnchorLinkContainer;
+
+      & a {
+        @include ProjectCardAnchors;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    &--github {
+      & FontAwesomeIcon {
+        font-size: 2rem;
+      }
+    }
+    &--live {
+      & FontAwesomeIcon {
+        font-size: 1.5rem;
+      }
+    }
+
+    &--reversed {
+      @include CardContainer;
+      display: flex;
+      flex-direction: row-reverse;
+
+      @include respond(tab-port) {
+        margin: 5rem 1rem 0 1rem;
+      }
+    }
+  }
+
+  &--githubIcon {
+    font-size: 1.7rem;
+  }
+  &--ExternalIcon {
+    font-size: 1.2rem;
+  }
+}
