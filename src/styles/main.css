@@ -352,6 +352,11 @@ body {
     flex-direction: column-reverse;
   }
 }
+@media (min-width: 112.5em) {
+  .hero {
+    margin-left: 2rem;
+  }
+}
 @media (max-width: 37.5em) {
   .hero {
     height: 100%;
@@ -436,7 +441,6 @@ body {
 }
 .hero__tech--border {
   position: relative;
-  content: "";
   height: 2rem;
   width: 0.15rem;
   background-color: #ff7f50;
@@ -485,7 +489,7 @@ body {
   position: relative;
   margin-left: 5rem;
   width: 100%;
-  height: 20rem;
+  bottom: 11rem;
 }
 @media (min-width: 112.5em) {
   .hero__img {
@@ -496,24 +500,24 @@ body {
   .hero__img {
     width: 50%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    bottom: 3rem;
   }
 }
 @media (max-width: 37.5em) {
   .hero__img {
-    height: 15rem;
+    bottom: 4rem;
     width: 100%;
-    margin: 5rem 0 15rem;
+    margin: 11rem auto;
   }
 }
 @media (max-width: 23.4375em) {
   .hero__img {
     margin-top: 5rem;
-    margin-left: 0;
   }
 }
 
 .morph-effect {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -529,14 +533,18 @@ body {
 }
 @media (max-width: 56.25em) {
   .morph-effect {
+    margin: 0 auto;
     width: 25rem;
     height: 20rem;
   }
 }
 @media (max-width: 37.5em) {
   .morph-effect {
-    margin-left: 2rem;
-    width: 20rem;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 18rem;
     height: 15rem;
   }
 }
@@ -1074,6 +1082,7 @@ body {
 }
 .container__info--svg {
   list-style: none;
+  width: 100%;
 }
 .container__info .what {
   display: flex;
@@ -1085,6 +1094,11 @@ body {
 @media (max-width: 56.25em) {
   .container__info .what {
     margin: 0 1rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .container__info .what p {
+    font-size: 0.78rem;
   }
 }
 .container__info .what li {
