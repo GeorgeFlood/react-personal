@@ -174,6 +174,7 @@
 
     &--svg {
       list-style: none;
+      width: 100%;
     }
 
     .what {
@@ -185,6 +186,10 @@
 
       @include respond(tab-port) {
         margin: 0 1rem;
+      }
+
+      @include respond(phone) {
+        font-size: 0.78rem;
       }
 
       & li {

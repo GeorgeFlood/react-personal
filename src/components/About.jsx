@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import myImg from "../../public/Images/aboutme.jpeg";
-import download from "../../public/Images/download.svg";
+import myImg from "../../Images/aboutme.jpeg";
+import download from "../../Images/download.svg";
 import useOnScreen from "./hooks/UseOnScreen.jsx";
-import CV from "../../public/Images/George+Flood_+Resume.pdf";
+import CV from "../../Images/GEORGE-FLOOD-ATS-Resume.pdf";
 
 const About = () => {
   const aboutRef = useRef(null);

@@ -1,9 +1,9 @@
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 emailjs.init("E2B1U5osr1KuFpbk3");
-import location from "../../public/Images/location.svg";
-import email from "../../public/Images/email.svg";
-import phone from "../../public/Images/phone.svg";
+import location from "../../Images/location.svg";
+import email from "../../Images/email.svg";
+import phone from "../../Images/phone.svg";
 import useOnScreen from "./hooks/UseOnScreen.jsx";
 
 const Contact = () => {
