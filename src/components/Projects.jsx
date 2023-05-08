@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCards";
+import ProjectCard from "./ProjectCards.jsx";
 import dictionary from "../../Public/Images/screenshots/dictionary.png";
 import signup from "../../Public/Images/screenshots/signup.png";
 import weather from "../../public/Images/screenshots/weather.png";

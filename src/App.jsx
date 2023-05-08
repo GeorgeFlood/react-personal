@@ -1,10 +1,10 @@
-import Navbar from "./components/Navbar";
-import MobileNav from "./components/MobileNav";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar.jsx";
+import MobileNav from "./components/MobileNav.jsx";
+import Hero from "./components/Hero.jsx";
+import About from "./components/About.jsx";
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (

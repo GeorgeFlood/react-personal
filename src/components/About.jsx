@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import myImg from "../../public/Images/aboutme.jpeg";
 import download from "../../public/Images/download.svg";
-import useOnScreen from "./hooks/UseOnScreen";
+import useOnScreen from "./hooks/UseOnScreen.jsx";
 import CV from "../../public/Images/George+Flood_+Resume.pdf";
 
 const About = () => {
