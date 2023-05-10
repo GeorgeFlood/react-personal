@@ -162,7 +162,7 @@
 
     & h3 {
       font-size: 2rem;
-      font-weight: 100;
+      font-weight: 200;
       color: #fff;
       text-align: left;
       justify-content: flex-start;
@@ -195,12 +195,17 @@
       }
 
       & li {
-        padding: 0.5rem;
+        padding: 1rem;
         margin: 1rem;
         background-color: rgba(white, 0.3);
         border: none;
-        box-shadow: 0 0.3rem 0.3rem rgba(#000, 0.25);
-        border-radius: 50%;
+        box-shadow: 0 0.3rem 0.3rem rgba(#000, 0.2),
+          0.3rem 0 0.3rem rgba(#000, 0.2);
+        border-radius: 100%;
+
+        @include respond(phone) {
+          padding: 0.5rem;
+        }
       }
     }
   }
