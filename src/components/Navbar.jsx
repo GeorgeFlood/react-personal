@@ -30,7 +30,7 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li className="nav__item">
-            <a href="#project">Project</a>
+            <a href="#project"> Portfolio</a>
           </li>
           <li className="nav__item">
             <a href="#contact">Contact</a>
@@ -46,7 +46,7 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li className="nav-sticky__item">
-            <a href="#project">Project</a>
+            <a href="#project">Portfolio</a>
           </li>
           <li className="nav-sticky__item">
             <a href="#contact">Contact</a>
