@@ -110,7 +110,8 @@
       margin-left: 1rem;
       padding: 0.6rem;
       background-color: #f7f5f5;
-      box-shadow: 0 0.3rem 0.3rem rgba(#000, 0.4);
+      box-shadow: 0 0.3rem 0.3rem rgba(#000, 0.2),
+        0.3rem 0 0.3rem rgba(#000, 0.2);
 
       @include respond(tab-port) {
         margin-top: 1rem;
