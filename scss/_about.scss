@@ -20,6 +20,7 @@
     flex-direction: column;
     flex-basis: 45%;
     margin: auto;
+    animation-delay: 0.5s;
 
     @include respond(tab-port) {
       margin-top: 2rem;
@@ -57,6 +58,7 @@
       font-size: 1.15rem;
       @include ParagraphSpaceHeight;
       color: $text-color;
+      margin-bottom: 0.5rem;
     }
   }
   &__btn {
@@ -64,14 +66,17 @@
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    padding: 0 0.4rem;
     height: 3.5rem;
-    width: 10rem;
-    background-color: $primary-color;
+    width: 11rem;
+    background-color: rgba($primary-color, 1);
     color: $background-color;
     font-weight: 700;
     font-size: 1rem;
     border: none;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
+    outline: 3px solid rgba($background-color, 1);
+    outline-offset: 0.5rem;
     box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.25);
     margin-top: 1rem;
     cursor: pointer;
@@ -82,10 +87,16 @@
     }
 
     &:hover {
-      background-color: rgba($primary-color, 0.8);
+      background-color: darken($color: $primary-color, $amount: 5);
+      outline-offset: 0rem;
       box-shadow: none;
     }
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
+
   &__img,
   &__info {
     transition: opacity 1s, transform 1s;
@@ -103,10 +114,10 @@
 
 .img {
   margin-left: auto;
-  height: 22rem;
-  width: 25rem;
+  height: 25rem;
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem rgba(#000, 0.25);
+  animation: flickCard 1s ease-in-out;
 
   @include respond(phone) {
     height: fit-content;
@@ -116,5 +127,6 @@
 
 .about__btn a {
   text-decoration: none;
-  color: inherit; /* optional: use this if you want the link color to match the button text color */
+
+  color: inherit;
 }

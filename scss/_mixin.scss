@@ -52,8 +52,7 @@
 
 @mixin CardImg {
   flex-basis: 60%;
-  background-color: red;
-  box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.1);
+  box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.15);
   border-radius: 0.5rem;
   margin: 1rem;
   overflow: hidden;
