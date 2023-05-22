@@ -55,22 +55,40 @@
   0%, 100% {
     transform: rotate(0deg);
   }
-  25% {
+  10%, 90% {
     transform: rotate(-10deg);
   }
-  75% {
+  20%, 80% {
     transform: rotate(10deg);
+  }
+  30%, 70% {
+    transform: rotate(-10deg);
+  }
+  40%, 60% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
   }
 }
 @keyframes wave-animation {
   0%, 100% {
     transform: rotate(0deg);
   }
-  25% {
+  10%, 90% {
     transform: rotate(-10deg);
   }
-  75% {
+  20%, 80% {
     transform: rotate(10deg);
+  }
+  30%, 70% {
+    transform: rotate(-10deg);
+  }
+  40%, 60% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
   }
 }
 @-webkit-keyframes fadeInLeft {
@@ -129,8 +147,6 @@
           animation-name: fadeInRight;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -398,8 +414,8 @@ body {
 }
 .hero__info--wave {
   display: inline-block;
-  -webkit-animation: wave-animation 3s linear infinite;
-          animation: wave-animation 3s linear infinite;
+  -webkit-animation: wave-animation 4.4s infinite;
+          animation: wave-animation 4.4s infinite;
 }
 .hero__icons {
   display: flex;
@@ -589,6 +605,8 @@ body {
   flex-direction: column;
   flex-basis: 45%;
   margin: auto;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 @media (max-width: 56.25em) {
   .about__info {
@@ -638,20 +656,24 @@ body {
   line-height: 1.4em;
   letter-spacing: 0.02em;
   color: #2c3e50;
+  margin-bottom: 0.5rem;
 }
 .about__btn {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: space-around;
+  padding: 0 0.4rem;
   height: 3.5rem;
-  width: 10rem;
-  background-color: #ff7f50;
+  width: 11rem;
+  background-color: coral;
   color: #ffffff;
   font-weight: 700;
   font-size: 1rem;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
+  outline: 3px solid white;
+  outline-offset: 0.5rem;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
   margin-top: 1rem;
   cursor: pointer;
@@ -663,8 +685,12 @@ body {
   }
 }
 .about__btn:hover {
-  background-color: rgba(255, 127, 80, 0.8);
+  background-color: #ff6c37;
+  outline-offset: 0rem;
   box-shadow: none;
+}
+.about__btn:active {
+  transform: translateY(2px);
 }
 .about__img, .about__info {
   transition: opacity 1s, transform 1s;
@@ -681,10 +707,11 @@ body {
 
 .img {
   margin-left: auto;
-  height: 22rem;
-  width: 25rem;
+  height: 25rem;
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+  -webkit-animation: flickCard 1s ease-in-out;
+          animation: flickCard 1s ease-in-out;
 }
 @media (max-width: 37.5em) {
   .img {
@@ -697,7 +724,7 @@ body {
 
 .about__btn a {
   text-decoration: none;
-  color: inherit; /* optional: use this if you want the link color to match the button text color */
+  color: inherit;
 }
 
 .projects {
@@ -768,8 +795,7 @@ body {
 }
 .projects__container--img {
   flex-basis: 60%;
-  background-color: red;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
   margin: 1rem;
   overflow: hidden;

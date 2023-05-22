@@ -18,14 +18,18 @@ const About = () => {
         <h4>ABOUT ME</h4>
         <h3>A dedicated Digital Crafts-man based in London, England 📍</h3>
         <p>
-          As a Junior Front-End Developer, I possess an impressive arsenal of
-          skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in
-          designing and maintaining responsive websites that offer a smooth user
-          experience. My expertise lies in crafting dynamic, engaging interfaces
-          through writing clean and optimized code and utilizing cutting-edge
-          development tools and techniques. I am also a team player who thrives
-          in collaborating with cross-functional teams to produce outstanding
-          web applications.
+          A passionate junior front-end developer based in the heart of London,
+          England. My journey in web development started with the basics: HTML,
+          CSS, and JavaScript. I quickly fell in love with the endless
+          possibilities of the web and expanded my skills to include modern
+          tools like React, Tailwind, and SCSS. With a knack for designing and
+          maintaining responsive websites, I strive to create smooth user
+          experiences and dynamic, engaging interfaces. My focus is always on
+          writing clean, optimized code, leveraging cutting-edge development
+          tools and techniques. But I'm not just a coder – I believe in the
+          power of teamwork. Collaborating with diverse teams to produce
+          outstanding web applications is where I really thrive. Looking to
+          create something amazing? Let's connect!
         </p>
         <a href={CV} download className="btn-link">
           <button className="about__btn">

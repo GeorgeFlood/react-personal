@@ -30,11 +30,24 @@
   100% {
     transform: rotate(0deg);
   }
-  25% {
+  10%,
+  90% {
     transform: rotate(-10deg);
   }
-  75% {
+  20%,
+  80% {
     transform: rotate(10deg);
+  }
+  30%,
+  70% {
+    transform: rotate(-10deg);
+  }
+  40%,
+  60% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
   }
 }
 
@@ -71,7 +84,6 @@
   opacity: 0;
   animation-name: fadeInRight;
   animation-duration: 1s;
-  animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
 
