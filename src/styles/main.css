@@ -52,19 +52,24 @@
   }
 }
 @-webkit-keyframes wave-animation {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg);
   }
-  10%, 90% {
+  10%,
+  90% {
     transform: rotate(-10deg);
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: rotate(10deg);
   }
-  30%, 70% {
+  30%,
+  70% {
     transform: rotate(-10deg);
   }
-  40%, 60% {
+  40%,
+  60% {
     transform: rotate(10deg);
   }
   50% {
@@ -72,19 +77,24 @@
   }
 }
 @keyframes wave-animation {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg);
   }
-  10%, 90% {
+  10%,
+  90% {
     transform: rotate(-10deg);
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: rotate(10deg);
   }
-  30%, 70% {
+  30%,
+  70% {
     transform: rotate(-10deg);
   }
-  40%, 60% {
+  40%,
+  60% {
     transform: rotate(10deg);
   }
   50% {
@@ -134,21 +144,21 @@
 .fade-in-left {
   opacity: 0;
   -webkit-animation-name: fadeInLeft;
-          animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .fade-in-right {
   opacity: 0;
   -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight;
+  animation-name: fadeInRight;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes morph {
@@ -225,7 +235,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .nav,
-.nav-sticky {
+  .nav-sticky {
     flex-direction: column-reverse;
   }
 }
@@ -260,7 +270,8 @@ body {
   top: -4rem;
   opacity: 0;
   visibility: hidden;
-  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
 }
 .nav-sticky.visible {
   top: 0;
@@ -415,7 +426,7 @@ body {
 .hero__info--wave {
   display: inline-block;
   -webkit-animation: wave-animation 4.4s infinite;
-          animation: wave-animation 4.4s infinite;
+  animation: wave-animation 4.4s infinite;
 }
 .hero__icons {
   display: flex;
@@ -476,7 +487,8 @@ body {
   margin-left: 1rem;
   padding: 0.6rem;
   background-color: #f7f5f5;
-  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2), 0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2),
+    0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 56.25em) {
   .hero__tech li {
@@ -488,10 +500,12 @@ body {
   width: 2.2rem;
   text-align: center;
 }
-.hero__git, .hero__link {
+.hero__git,
+.hero__link {
   transition: color 0.3s ease-in-out;
 }
-.hero__git:hover, .hero__link:hover {
+.hero__git:hover,
+.hero__link:hover {
   cursor: pointer;
 }
 .hero__git:hover {
@@ -542,7 +556,7 @@ body {
   overflow: hidden;
   border-radius: 60% 40%;
   -webkit-animation: morph 7s infinite, rainbow 15s linear infinite;
-          animation: morph 7s infinite, rainbow 15s linear infinite;
+  animation: morph 7s infinite, rainbow 15s linear infinite;
   opacity: 1;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   border: 6px solid rgb(0, 0, 0);
@@ -606,7 +620,7 @@ body {
   flex-basis: 45%;
   margin: auto;
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 @media (max-width: 56.25em) {
   .about__info {
@@ -620,10 +634,17 @@ body {
   margin-right: auto;
   width: 70%;
 }
+@media (min-width: 112.5em) {
+  .about__info h3,
+  .about__info h4,
+  .about__info p {
+    width: 55%;
+  }
+}
 @media (max-width: 56.25em) {
   .about__info h3,
-.about__info h4,
-.about__info p {
+  .about__info h4,
+  .about__info p {
     margin: auto;
     text-align: center;
     width: 70%;
@@ -631,8 +652,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .about__info h3,
-.about__info h4,
-.about__info p {
+  .about__info h4,
+  .about__info p {
     width: 90%;
   }
 }
@@ -692,7 +713,8 @@ body {
 .about__btn:active {
   transform: translateY(2px);
 }
-.about__img, .about__info {
+.about__img,
+.about__info {
   transition: opacity 1s, transform 1s;
   opacity: 0;
 }
@@ -711,7 +733,7 @@ body {
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
   -webkit-animation: flickCard 1s ease-in-out;
-          animation: flickCard 1s ease-in-out;
+  animation: flickCard 1s ease-in-out;
 }
 @media (max-width: 37.5em) {
   .img {
@@ -748,7 +770,7 @@ body {
 .projects__img img {
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 37.5em) {
   .projects__intro {
@@ -844,7 +866,8 @@ body {
   margin-top: 1rem;
   align-items: center;
 }
-.projects__container--github, .projects__container--live {
+.projects__container--github,
+.projects__container--live {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -852,7 +875,8 @@ body {
   cursor: pointer;
   font-size: 1rem;
 }
-.projects__container--github a, .projects__container--live a {
+.projects__container--github a,
+.projects__container--live a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -862,7 +886,8 @@ body {
   color: #000;
   transition: color 0.3s ease-in-out;
 }
-.projects__container--github a:hover, .projects__container--live a:hover {
+.projects__container--github a:hover,
+.projects__container--live a:hover {
   color: #3d89f9;
 }
 .projects__container--github FontAwesomeIcon {
@@ -928,7 +953,8 @@ body {
   color: #ff7f50;
 }
 @media (max-width: 56.25em) {
-  .contact__intro h3, .contact__intro h4 {
+  .contact__intro h3,
+  .contact__intro h4 {
     margin: 0 15%;
   }
 }
@@ -1137,7 +1163,8 @@ body {
   margin: 1rem;
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
-  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2), 0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2),
+    0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
   border-radius: 100%;
 }
 @media (max-width: 37.5em) {
@@ -1180,6 +1207,7 @@ body {
     margin-bottom: 1rem;
   }
 }
-.footer__link, .footer__github {
+.footer__link,
+.footer__github {
   color: white;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
