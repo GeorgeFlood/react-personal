@@ -33,6 +33,10 @@
       margin-right: auto;
       width: 70%;
 
+      @include respond(big-desk) {
+        width: 55%;
+      }
+
       @include respond(tab-port) {
         margin: auto;
         text-align: center;
