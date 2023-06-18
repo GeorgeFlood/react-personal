@@ -4,7 +4,7 @@ import signup from "../../Images/screenshots/signup.png";
 import weather from "../../Images/screenshots/weather.png";
 import space from "../../Images/screenshots/space.png";
 import portfolio from "../../Images/screenshots/oldportfolio.png";
-import dashboard from "../../Images/screenshots/dashboard.png";
+import snapshot from "../../Images/screenshots/snapshot.png";
 const Projects = () => {
   const projectData = [
     {
@@ -44,13 +44,13 @@ const Projects = () => {
       liveDemoLink: "https://georgeflood.github.io/space-tourism/index.html",
     },
     {
-      imageSrc: `${dashboard}`,
-      name: "Dashboard 📊",
+      imageSrc: `${snapshot}`,
+      name: "Snapshot 📸",
       description:
-        "Discover a well-designed dashboard, merging style and functionality. Its intuitive layout and visually appealing interface streamline data management and user interaction for an efficient, enjoyable experience.",
-      tech: ["HMTL", "Javascript", "CSS"],
-      githubLink: "https://github.com/GeorgeFlood/project-7",
-      liveDemoLink: "https://georgeflood.github.io/project-7/",
+        "Snapshot is a robust web platform designed for photographers. It offers a subscription-based service enabling users to host and share their photography stories on custom domains. Designed with a fully responsive layout, Snapshot ensures an optimal viewing experience across all devices.",
+      tech: ["React", "SCSS"],
+      githubLink: "https://github.com/GeorgeFlood/snapshot-web",
+      liveDemoLink: "https://george-photosnap.netlify.app/",
     },
     {
       imageSrc: `${portfolio}`,
