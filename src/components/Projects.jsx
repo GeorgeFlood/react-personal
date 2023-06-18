@@ -47,7 +47,7 @@ const Projects = () => {
       imageSrc: `${snapshot}`,
       name: "Snapshot 📸",
       description:
-        "Snapshot is a robust web platform designed for photographers. It offers a subscription-based service enabling users to host and share their photography stories on custom domains. Designed with a fully responsive layout, Snapshot ensures an optimal viewing experience across all devices.",
+        "Snapshot is a robust web platform designed for photographers. It offers a subscription-based service enabling users to host and share their photography stories on custom domains. Designed with a fully responsive layout.",
       tech: ["React", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/snapshot-web",
       liveDemoLink: "https://george-photosnap.netlify.app/",
