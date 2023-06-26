@@ -2,7 +2,7 @@ import { useRef } from "react";
 import myImg from "../../Images/aboutme.jpeg";
 import download from "../../Images/download.svg";
 import useOnScreen from "./hooks/UseOnScreen.jsx";
-import CV from "../../Images/George_Flood_CV.docx";
+const cvUrl = "/George_Flood_CV.docx";
 
 const About = () => {
   const aboutRef = useRef(null);
@@ -31,7 +31,7 @@ const About = () => {
           outstanding web applications is where I really thrive. Looking to
           create something amazing? Let's connect!
         </p>
-        <a href={CV} download className="btn-link">
+        <a href={cvUrl} download className="btn-link">
           <button className="about__btn">
             Download CV
             <img src={download} alt="Download" className="downloadSVG" />
