@@ -2,7 +2,7 @@ import { useRef } from "react";
 import myImg from "../../Images/aboutme.jpeg";
 import download from "../../Images/download.svg";
 import useOnScreen from "./hooks/UseOnScreen.jsx";
-import CV from "../../Images/GEORGE-FLOOD-ATS-Resume.pdf";
+import CV from "../../Images/George_Flood_CV.docx";
 
 const About = () => {
   const aboutRef = useRef(null);
