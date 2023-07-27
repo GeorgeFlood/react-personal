@@ -4,7 +4,7 @@
   height: 100vh;
 
   @include respond(big-desk) {
-    margin-left: 2rem;
+    margin-left: 10rem;
   }
 
   @include respond(phone) {
@@ -71,6 +71,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    @include respond-between(1375, 2361) {
+      flex-wrap: nowrap;
+    }
 
     @include respond(med-desk) {
       flex-wrap: nowrap;
