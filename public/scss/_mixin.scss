@@ -44,7 +44,9 @@
 
   @include respond(tab-port) {
     flex-direction: column;
-    height: 50rem;
+    height: auto;
+    min-height: 15rem;
+    margin-top: 2rem;
     padding: 0;
     width: auto;
   }
@@ -121,5 +123,11 @@
     @media (min-width: 112.5em) {
       @content;
     }
+  }
+}
+
+@mixin respond-between($min, $max) {
+  @media (min-width: #{$min}px) and (max-width: #{$max}px) {
+    @content;
   }
 }
