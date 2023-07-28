@@ -57,7 +57,7 @@ const Projects = () => {
       name: "Old Portfolio 🎨",
       description:
         "My previous portfolio reflecting creativity and skill. As a designer, I've adopted a modern, clean aesthetic to showcase work and improve user experience, showcasing my growth and adaptability.",
-      tech: ["HMTL", "Javascript", "SCSS"],
+      tech: ["HTML", "Javascript", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/hello-world-portfolio",
       liveDemoLink: "https://georgeflood.github.io/hello-world-portfolio/",
     },
