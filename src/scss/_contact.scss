@@ -126,10 +126,10 @@
       background: linear-gradient(
         to right,
         $primary-color,
-        darken($primary-color, 10%)
+        darken($primary-color, 20%)
       );
       box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.2);
-      transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
       cursor: pointer;
       @include respond(tab-port) {
         width: 30%;
@@ -139,11 +139,7 @@
       }
 
       &:hover {
-        background: linear-gradient(
-          to right,
-          darken($primary-color, 10%),
-          darken($primary-color, 20%)
-        );
+        opacity: 0.6;
         box-shadow: none;
       }
     }
@@ -158,8 +154,8 @@
     background: linear-gradient(
       to top right,
       $secondary-color,
-      70%,
-      darken($secondary-color, 25%)
+      80%,
+      darken($secondary-color, 25%) 20%
     );
     box-shadow: 0.5rem 0 0.5rem rgba(#000, 0.4);
     margin: auto;
@@ -176,7 +172,7 @@
 
     & h3 {
       font-size: 2rem;
-      font-weight: 200;
+      font-weight: 700;
       color: #fff;
       text-align: left;
       justify-content: flex-start;

@@ -697,7 +697,7 @@ body {
   }
 }
 .about__btn:hover {
-  background: linear-gradient(to right, #ff5a1d, #e93f00);
+  opacity: 0.6;
   outline-offset: 0rem;
   box-shadow: none;
 }
@@ -758,7 +758,8 @@ body {
   height: 100%;
 }
 .projects__img img {
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1073,9 +1074,9 @@ body {
   font-weight: 700;
   border: none;
   border-radius: 0.4rem;
-  background: linear-gradient(to right, #ff7f50, #ff5a1d);
+  background: linear-gradient(to right, #ff7f50, #e93f00);
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
 }
 @media (max-width: 56.25em) {
@@ -1089,7 +1090,7 @@ body {
   }
 }
 .container__subjectMsg button:hover {
-  background: linear-gradient(to right, #ff5a1d, #e93f00);
+  opacity: 0.6;
   box-shadow: none;
 }
 .container__info {
@@ -1098,7 +1099,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top right, #3d89f9, 70%, #054bb1);
+  background: linear-gradient(to top right, #3d89f9, 80%, #054bb1 20%);
   box-shadow: 0.5rem 0 0.5rem rgba(0, 0, 0, 0.4);
   margin: auto;
   border-radius: 0.5rem;
@@ -1115,7 +1116,7 @@ body {
 }
 .container__info h3 {
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 700;
   color: #fff;
   text-align: left;
   justify-content: flex-start;
@@ -1199,5 +1200,7 @@ body {
   }
 }
 .footer__link, .footer__github {
+  color: white;
+}/*# sourceMappingURL=main.css.map */ .footer__github {
   color: white;
 }/*# sourceMappingURL=main.css.map */

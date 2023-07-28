@@ -95,12 +95,7 @@
     }
 
     &:hover {
-      background: linear-gradient(
-        to right,
-        darken($primary-color, 10%),
-        darken($primary-color, 20%)
-      );
-
+      opacity: 0.6;
       outline-offset: 0rem;
       box-shadow: none;
     }
