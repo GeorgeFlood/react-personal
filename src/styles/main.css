@@ -678,7 +678,7 @@ body {
   padding: 0 0.4rem;
   height: 3.5rem;
   width: 11rem;
-  background-color: coral;
+  background: linear-gradient(to right, #ff7f50, #e93f00);
   color: #ffffff;
   font-weight: 700;
   font-size: 1rem;
@@ -689,7 +689,7 @@ body {
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
   margin-top: 1rem;
   cursor: pointer;
-  transition: background-color, box-shadow, 0.3s ease-in-out;
+  transition: box-shadow, 0.3s ease-in-out;
 }
 @media (max-width: 56.25em) {
   .about__btn {
@@ -697,7 +697,7 @@ body {
   }
 }
 .about__btn:hover {
-  background-color: #ff6c37;
+  background: linear-gradient(to right, #ff5a1d, #e93f00);
   outline-offset: 0rem;
   box-shadow: none;
 }
@@ -1073,9 +1073,10 @@ body {
   font-weight: 700;
   border: none;
   border-radius: 0.4rem;
-  background-color: #ff7f50;
+  background: linear-gradient(to right, #ff7f50, #ff5a1d);
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 @media (max-width: 56.25em) {
   .container__subjectMsg button {
@@ -1088,7 +1089,7 @@ body {
   }
 }
 .container__subjectMsg button:hover {
-  background-color: rgba(255, 127, 80, 0.6);
+  background: linear-gradient(to right, #ff5a1d, #e93f00);
   box-shadow: none;
 }
 .container__info {
@@ -1097,7 +1098,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #3d89f9;
+  background: linear-gradient(to top right, #3d89f9, 70%, #054bb1);
+  box-shadow: 0.5rem 0 0.5rem rgba(0, 0, 0, 0.4);
   margin: auto;
   border-radius: 0.5rem;
   height: 105%;

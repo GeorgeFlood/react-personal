@@ -123,10 +123,14 @@
       font-weight: 700;
       border: none;
       border-radius: 0.4rem;
-      background-color: $primary-color;
+      background: linear-gradient(
+        to right,
+        $primary-color,
+        darken($primary-color, 10%)
+      );
       box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.2);
       transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
+      cursor: pointer;
       @include respond(tab-port) {
         width: 30%;
       }
@@ -135,7 +139,11 @@
       }
 
       &:hover {
-        background-color: rgba($primary-color, 0.6);
+        background: linear-gradient(
+          to right,
+          darken($primary-color, 10%),
+          darken($primary-color, 20%)
+        );
         box-shadow: none;
       }
     }
@@ -147,7 +155,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $secondary-color;
+    background: linear-gradient(
+      to top right,
+      $secondary-color,
+      70%,
+      darken($secondary-color, 25%)
+    );
+    box-shadow: 0.5rem 0 0.5rem rgba(#000, 0.4);
     margin: auto;
     border-radius: 0.5rem;
     height: 105%;
