@@ -73,7 +73,11 @@
     padding: 0 0.4rem;
     height: 3.5rem;
     width: 11rem;
-    background-color: rgba($primary-color, 1);
+    background: linear-gradient(
+      to right,
+      $primary-color,
+      darken($primary-color, 20%)
+    );
     color: $background-color;
     font-weight: 700;
     font-size: 1rem;
@@ -84,14 +88,19 @@
     box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.25);
     margin-top: 1rem;
     cursor: pointer;
-    transition: background-color, box-shadow, 0.3s ease-in-out;
+    transition: box-shadow, 0.3s ease-in-out;
 
     @include respond(tab-port) {
       margin: 2rem auto;
     }
 
     &:hover {
-      background-color: darken($color: $primary-color, $amount: 5);
+      background: linear-gradient(
+        to right,
+        darken($primary-color, 10%),
+        darken($primary-color, 20%)
+      );
+
       outline-offset: 0rem;
       box-shadow: none;
     }
