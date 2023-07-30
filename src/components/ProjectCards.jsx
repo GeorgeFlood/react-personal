@@ -31,12 +31,14 @@ const ProjectCard = ({
   return (
     <div ref={containerRef} className={containerClasses}>
       <div className="projects__container--img">
-        <div
-          className="projects__img"
-          style={{
-            backgroundImage: `url(${imageSrc})`,
-          }}
-        />
+        <a href={liveDemoLink} target="_blank" rel="noopener noreferrer">
+          <div
+            className="projects__img"
+            style={{
+              backgroundImage: `url(${imageSrc})`,
+            }}
+          />
+        </a>
       </div>
 
       <div className="projects__container--info">
