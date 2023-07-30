@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import myImg from "../../Images/aboutme.jpeg";
+import myImg from "../../Images/aboutme.jpg";
 import download from "../../Images/download.svg";
 import useOnScreen from "./hooks/UseOnScreen.jsx";
 const cvUrl = "/George_Flood_CV.docx";
@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="about" id="about" ref={aboutRef}>
       <div className={`about__img ${aboutVisible ? "fade-in-left" : ""}`}>
-        <img src={myImg} className="img" />
+        <img src={myImg} alt="Picture of me in Amsterdam" className="img" />
       </div>
       <div className={`about__info ${aboutVisible ? "fade-in-right" : ""}`}>
         <h4>ABOUT ME</h4>

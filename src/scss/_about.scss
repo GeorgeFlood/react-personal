@@ -123,9 +123,9 @@
 .img {
   margin-left: auto;
   height: 25rem;
-  border-radius: 1rem;
-  box-shadow: 0 1rem 1rem rgba(#000, 0.25);
-  animation: flickCard 1s ease-in-out;
+  border-radius: 0rem 4.25rem 0rem 4.25rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(#000, 0.35);
+  transition: translate 0.4s ease-in-out;
 
   @include respond(phone) {
     height: fit-content;

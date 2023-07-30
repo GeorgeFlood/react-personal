@@ -4,22 +4,22 @@
     border-color: #ff7f50;
   }
   14% {
-    border-color: #1d2951;
+    border-color: #ffb347;
   }
   28% {
-    border-color: #98ddca;
+    border-color: #ffe135;
   }
   42% {
-    border-color: #fff9b0;
+    border-color: #bbf90f;
   }
   57% {
-    border-color: #4aa0d5;
+    border-color: #7cfc00;
   }
   71% {
-    border-color: #d7b8ab;
+    border-color: #20b2aa;
   }
   85% {
-    border-color: #b57edc;
+    border-color: #00b2ff;
   }
   100% {
     border-color: #ff7f50;
@@ -30,22 +30,22 @@
     border-color: #ff7f50;
   }
   14% {
-    border-color: #1d2951;
+    border-color: #ffb347;
   }
   28% {
-    border-color: #98ddca;
+    border-color: #ffe135;
   }
   42% {
-    border-color: #fff9b0;
+    border-color: #bbf90f;
   }
   57% {
-    border-color: #4aa0d5;
+    border-color: #7cfc00;
   }
   71% {
-    border-color: #d7b8ab;
+    border-color: #20b2aa;
   }
   85% {
-    border-color: #b57edc;
+    border-color: #00b2ff;
   }
   100% {
     border-color: #ff7f50;
@@ -562,8 +562,8 @@ body {
   height: 25rem;
   overflow: hidden;
   border-radius: 60% 40%;
-  -webkit-animation: morph 7s infinite, rainbow 15s linear infinite;
-          animation: morph 7s infinite, rainbow 15s linear infinite;
+  -webkit-animation: morph 5s infinite, rainbow 15s linear infinite;
+          animation: morph 5s infinite, rainbow 15s linear infinite;
   opacity: 1;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   border: 6px solid rgb(0, 0, 0);
@@ -736,10 +736,9 @@ body {
 .img {
   margin-left: auto;
   height: 25rem;
-  border-radius: 1rem;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
-  -webkit-animation: flickCard 1s ease-in-out;
-          animation: flickCard 1s ease-in-out;
+  border-radius: 0rem 4.25rem 0rem 4.25rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.35);
+  transition: translate 0.4s ease-in-out;
 }
 @media (max-width: 37.5em) {
   .img {
