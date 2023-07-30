@@ -41,6 +41,7 @@
   border-radius: 0.8rem;
   background-color: $secondary-background;
   box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.15);
+  overflow: hidden;
 
   @include respond(tab-port) {
     flex-direction: column;
@@ -50,14 +51,6 @@
     padding: 0;
     width: auto;
   }
-}
-
-@mixin CardImg {
-  flex-basis: 60%;
-  box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.15);
-  border-radius: 0.5rem;
-  margin: 1rem;
-  overflow: hidden;
 }
 
 @mixin cardInfo {

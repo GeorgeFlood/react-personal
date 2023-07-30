@@ -174,6 +174,22 @@
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+@-webkit-keyframes scroll {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+@keyframes scroll {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
 *::before,
 *::after,
 * {
@@ -754,14 +770,23 @@ body {
 }
 .projects__img {
   overflow: hidden;
-  width: 100%;
   height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  transition: all 6s ease-in-out;
 }
-.projects__img img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+@media (max-width: 56.25em) {
+  .projects__img {
+    background-size: cover;
+    width: 100%;
+    height: 22rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .projects__img {
+    height: 13rem;
+  }
 }
 @media (max-width: 37.5em) {
   .projects__intro {
@@ -787,6 +812,7 @@ body {
   border-radius: 0.8rem;
   background-color: #f0f0f0;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
   display: flex;
   opacity: 0;
   position: relative;
@@ -814,6 +840,18 @@ body {
   border-radius: 0.5rem;
   margin: 1rem;
   overflow: hidden;
+  position: relative;
+}
+@media (max-width: 56.25em) {
+  .projects__container--img {
+    flex-basis: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 37.5em) {
+  .projects__container--img {
+    height: auto;
+  }
 }
 .projects__container--info {
   position: relative;
@@ -895,6 +933,7 @@ body {
   border-radius: 0.8rem;
   background-color: #f0f0f0;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -912,6 +951,9 @@ body {
   .projects__container--reversed {
     margin: 5rem 1rem 0 1rem;
   }
+}
+.projects__container:hover .projects__img {
+  background-position: bottom;
 }
 .projects--githubIcon {
   font-size: 1.7rem;
@@ -1200,7 +1242,5 @@ body {
   }
 }
 .footer__link, .footer__github {
-  color: white;
-}/*# sourceMappingURL=main.css.map */ .footer__github {
   color: white;
 }/*# sourceMappingURL=main.css.map */

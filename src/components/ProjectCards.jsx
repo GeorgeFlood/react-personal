@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -16,27 +16,33 @@ const ProjectCard = ({
   const containerRef = useRef(null);
   const containerVisible = useOnScreen(containerRef, "0px 0px -200px 0px");
 
+  const containerClasses = [
+    "projects__container",
+    reversed && "projects__container--reversed",
+    containerVisible && (reversed ? "fade-in-right" : "fade-in-left"),
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  const techItems = tech.map((techItem, index) => (
+    <p key={`tech-item-${index}`}>{techItem}</p>
+  ));
+
   return (
-    <div
-      ref={containerRef}
-      className={`projects__container${
-        reversed ? " projects__container--reversed" : ""
-      } ${
-        containerVisible ? (reversed ? "fade-in-right" : "fade-in-left") : ""
-      }`}
-    >
+    <div ref={containerRef} className={containerClasses}>
       <div className="projects__container--img">
-        <img src={imageSrc} alt={name} className="projects__img" />
+        <div
+          className="projects__img"
+          style={{
+            backgroundImage: `url(${imageSrc})`,
+          }}
+        />
       </div>
 
       <div className="projects__container--info">
         <h3>{name}</h3>
         <p>{description}</p>
-        <div className="projects__container--tech">
-          {tech.map((techItem, index) => (
-            <p key={index}>{techItem}</p>
-          ))}
-        </div>
+        <div className="projects__container--tech">{techItems}</div>
         <div className="projects__container--links">
           <div className="projects__container--github">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
