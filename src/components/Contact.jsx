@@ -35,7 +35,7 @@ const Contact = () => {
     <div className="contact" id="contact">
       <div className="contact__intro">
         <h4>CONTACT</h4>
-        <h3>Let's Connect and Create 👇</h3>
+        <h3>Get in Touch! 👇</h3>
       </div>
 
       <div className="container" ref={containerRef}>

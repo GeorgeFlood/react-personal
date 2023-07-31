@@ -68,9 +68,7 @@ const Projects = () => {
     <div className="projects">
       <div className="projects__intro" id="project">
         <h4>PORTFOLIO</h4>
-        <h3>
-          Crafting seamless digital experiences to bring your ideas to life. 🧩
-        </h3>
+        <h3>From Idea to URL: Converting Concepts into Clicks 🧩</h3>
       </div>
 
       {projectData.map((project, index) => (
