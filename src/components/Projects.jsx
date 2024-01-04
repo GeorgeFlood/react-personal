@@ -5,9 +5,46 @@ import weather from "../../Images/screenshots/weather_compressed.jpg";
 import space from "../../Images/screenshots/space_compressed.jpg";
 import portfolio from "../../Images/screenshots/oldportfolio_compressed.jpg";
 import snapshot from "../../Images/screenshots/snapshot_compressed.jpg";
+import designo from "../../Images/screenshots/designo.jpg";
 const Projects = () => {
   const projectData = [
+        {
+      imageSrc: `${designo}`,
+      name: "Designo 🔨",
+      description:
+        "Designo is an experienced creative agency focused on delivering custom web, app, and graphic design solutions. They emphasize strategic, agile methodologies and client collaboration to create impactful and meaningful digital branding experiences.",
+      tech: ["React", "CSS"],
+      githubLink: "https://github.com/GeorgeFlood/Designo",
+      liveDemoLink: "https://cozy-sprite-c52331.netlify.app/",
+    },
     {
+      imageSrc: `${snapshot}`,
+      name: "Snapshot 📸",
+      description:
+        "Snapshot is a robust web platform designed for photographers. It offers a subscription-based service enabling users to host and share their photography stories on custom domains. Designed with a fully responsive layout.",
+      tech: ["React", "SCSS"],
+      githubLink: "https://github.com/GeorgeFlood/snapshot-web",
+      liveDemoLink: "https://george-photosnap.netlify.app/",
+    },
+        {
+      imageSrc: `${portfolio}`,
+      name: "Old Portfolio 🎨",
+      description:
+        "My previous portfolio reflecting creativity and skill. As a designer, I've adopted a modern, clean aesthetic to showcase work and improve user experience, showcasing my growth and adaptability.",
+      tech: ["HTML", "Javascript", "SCSS"],
+      githubLink: "https://github.com/GeorgeFlood/hello-world-portfolio",
+      liveDemoLink: "https://georgeflood.github.io/hello-world-portfolio/",
+    },
+        {
+      imageSrc: `${space}`,
+      name: "Space Tourism 🚀",
+      description:
+        "Uncover the universe with a captivating site that fuels your space cravings. Effortlessly explore the cosmos using eye-catching visuals and smooth navigation, showcasing limitless celestial escapades.",
+      tech: ["HTML", "Javascript", "SCSS"],
+      githubLink: "https://github.com/GeorgeFlood/space-tourism",
+      liveDemoLink: "https://georgeflood.github.io/space-tourism/index.html",
+    },
+      {
       imageSrc: `${dictionary}`,
       name: "Dictionary App 📚",
       description:
@@ -24,42 +61,6 @@ const Projects = () => {
       tech: ["React", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/signup-react",
       liveDemoLink: "https://georgeflood.github.io/signup-react/",
-    },
-    {
-      imageSrc: `${weather}`,
-      name: "Weather App ☀️",
-      description:
-        " a sleek weather app with precise forecasts and an intuitive design. Merging functionality and aesthetics, it highlights my commitment to exceptional user experiences.",
-      tech: ["React", "SCSS"],
-      githubLink: "https://github.com/GeorgeFlood/weatherApp-react",
-      liveDemoLink: "https://georgeflood.github.io/weatherApp-react/",
-    },
-    {
-      imageSrc: `${space}`,
-      name: "Space Tourism 🚀",
-      description:
-        "Uncover the universe with a captivating site that fuels your space cravings. Effortlessly explore the cosmos using eye-catching visuals and smooth navigation, showcasing limitless celestial escapades.",
-      tech: ["HTML", "Javascript", "SCSS"],
-      githubLink: "https://github.com/GeorgeFlood/space-tourism",
-      liveDemoLink: "https://georgeflood.github.io/space-tourism/index.html",
-    },
-    {
-      imageSrc: `${snapshot}`,
-      name: "Snapshot 📸",
-      description:
-        "Snapshot is a robust web platform designed for photographers. It offers a subscription-based service enabling users to host and share their photography stories on custom domains. Designed with a fully responsive layout.",
-      tech: ["React", "SCSS"],
-      githubLink: "https://github.com/GeorgeFlood/snapshot-web",
-      liveDemoLink: "https://george-photosnap.netlify.app/",
-    },
-    {
-      imageSrc: `${portfolio}`,
-      name: "Old Portfolio 🎨",
-      description:
-        "My previous portfolio reflecting creativity and skill. As a designer, I've adopted a modern, clean aesthetic to showcase work and improve user experience, showcasing my growth and adaptability.",
-      tech: ["HTML", "Javascript", "SCSS"],
-      githubLink: "https://github.com/GeorgeFlood/hello-world-portfolio",
-      liveDemoLink: "https://georgeflood.github.io/hello-world-portfolio/",
     },
     // Add more project data objects here
   ];
