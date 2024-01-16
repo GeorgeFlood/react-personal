@@ -35,7 +35,7 @@
 @mixin CardContainer {
   position: relative;
   display: flex;
-  width: 100%;
+  min-width: 55rem; /// THIS IS THE LINE THAT CHANGED FROM 100% TO 55REM!!!!!!!!!!!
   min-height: 25rem;
   margin-top: 5rem;
   border-radius: 0.8rem;

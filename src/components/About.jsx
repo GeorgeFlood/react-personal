@@ -18,18 +18,15 @@ const About = () => {
         <h4>ABOUT ME</h4>
         <h3>A dedicated Digital Crafts-man based in London, England 📍</h3>
         <p>
-          A passionate junior front-end developer based in the heart of London,
-          England. My journey in web development started with the basics: HTML,
-          CSS, and JavaScript. I quickly fell in love with the endless
-          possibilities of the web and expanded my skills to include modern
-          tools like React, Tailwind, and SCSS. With a knack for designing and
-          maintaining responsive websites, I strive to create smooth user
-          experiences and dynamic, engaging interfaces. My focus is always on
-          writing clean, optimized code, leveraging cutting-edge development
-          tools and techniques. But I'm not just a coder – I believe in the
-          power of teamwork. Collaborating with diverse teams to produce
-          outstanding web applications is where I really thrive. Looking to
-          create something amazing? Let's connect!
+       Greetings straight outta the murky depths of London (it's mostly rain). I'm the junior front-end developer you're reading about. My journey into the world of web development started in the most groundbreaking way imaginable: HTML, CSS, and JavaScript. It was an exhilarating ride, akin to watching paint dry, but in RGB.
+       <br></br> <br/>
+
+       I've since expanded my arsenal with tools like React, Tailwind, and SCSS. These are the tools that help me turn the mundane into the slightly-less mundane, crafting websites that respond with the enthusiasm of a British royal guard. My aim? To create user experiences that are as seamless as my tea-making routine.
+  <br></br> <br/>
+
+         But don't be fooled, I'm more than a semi-colon enthusiast. My real talent lies in blending into teams like a chameleon, only less colourful and more focused on producing exceptional web applications. It's the kind of collaboration that's as exciting as discussing the weather in an elevator.
+       <br></br> <br/>
+       So, if you're interested in creating digital experiences with someone who considers coding a wild Friday night, let's connect. We can push the boundaries of web development, or at least nudge them gently.
         </p>
         <a href={cvUrl} download className="btn-link">
           <button className="about__btn">

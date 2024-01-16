@@ -1,7 +1,6 @@
 import ProjectCard from "./ProjectCards.jsx";
 import dictionary from "../../Images/screenshots/dictionary_compressed.jpg";
 import signup from "../../Images/screenshots/signup_compressed.jpg";
-import weather from "../../Images/screenshots/weather_compressed.jpg";
 import space from "../../Images/screenshots/space_compressed.jpg";
 import portfolio from "../../Images/screenshots/oldportfolio_compressed.jpg";
 import snapshot from "../../Images/screenshots/snapshot_compressed.jpg";
