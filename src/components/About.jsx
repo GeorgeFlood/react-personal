@@ -16,7 +16,7 @@ const About = () => {
       </div>
       <div className={`about__info ${aboutVisible ? "fade-in-right" : ""}`}>
         <h4>ABOUT ME</h4>
-        <h3>A dedicated Digital Crafts-man based in London, England 📍</h3>
+        <h3>A Digital Craftsman, an Information Marksman based in London, England 📍</h3>
         <p>
        Greetings straight outta the murky depths of London (it's mostly rain). I'm the junior front-end developer you're reading about. My journey into the world of web development started in the most groundbreaking way imaginable: HTML, CSS, and JavaScript. It was an exhilarating ride, akin to watching paint dry, but in RGB.
        <br></br> <br/>
@@ -27,6 +27,8 @@ const About = () => {
          But don't be fooled, I'm more than a semi-colon enthusiast. My real talent lies in blending into teams like a chameleon, only less colourful and more focused on producing exceptional web applications. It's the kind of collaboration that's as exciting as discussing the weather in an elevator.
        <br></br> <br/>
        So, if you're interested in creating digital experiences with someone who considers coding a wild Friday night, let's connect. We can push the boundaries of web development, or at least nudge them gently.
+  <br></br> <br/>
+Lastly, all the projects you see here, including this site, are hand-crafted from scratch – no templates, no tutorials.
         </p>
         <a href={cvUrl} download className="btn-link">
           <button className="about__btn">
