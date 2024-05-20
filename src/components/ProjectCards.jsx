@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +19,7 @@ const ProjectCard = ({
   const containerClasses = [
     "projects__container",
     reversed && "projects__container--reversed",
-    containerVisible && (reversed ? "fade-in-right" : "fade-in-left"),
+    containerVisible ? (reversed ? "fade-in-right" : "fade-in-left") : "hidden",
   ]
     .filter(Boolean)
     .join(" ");
@@ -29,7 +29,7 @@ const ProjectCard = ({
   ));
 
   return (
-    <div ref={containerRef} className={containerClasses}>
+    <section ref={containerRef} className={containerClasses} id="project">
       <div className="projects__container--img">
         <a href={liveDemoLink} target="_blank" rel="noopener noreferrer">
           <div
@@ -66,7 +66,7 @@ const ProjectCard = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

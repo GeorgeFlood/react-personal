@@ -1,46 +1,48 @@
-// Hero section styles
 .hero {
   @include flexCenter;
   height: 100vh;
+  padding: $spacing-medium;
 
   @include respond(big-desk) {
-    margin-left: 10rem;
+    margin-left: $spacing-large;
   }
 
   @include respond(phone) {
     height: 100%;
+    padding: $spacing-small;
   }
 
   // Info section styles
   &__info {
     flex-basis: 40%;
     width: 95%;
+    padding: $spacing-small;
 
     @include respond(big-desk) {
-      flex-basis: 25%;
+      flex-basis: 30%;
     }
 
     @include respond(tab-port) {
       text-align: center;
-      margin: 0;
+      margin: 0 auto;
       width: 85%;
     }
 
     @include respond(phone) {
-      width: 95%;
-      margin-bottom: 5rem;
+      width: 90%;
+      margin-bottom: $spacing-large;
     }
 
     & h1 {
-      font-size: 3.3rem;
+      font-size: $font-size-large;
       font-weight: bold;
     }
 
     & p {
-      font-size: 1.25rem;
+      font-size: $font-size-small;
       @include ParagraphSpaceHeight;
       color: $text-color;
-      margin: 1rem 0;
+      margin: $spacing-small 0;
       font-weight: 200;
     }
 
@@ -53,11 +55,12 @@
   // Icons section styles
   &__icons {
     display: flex;
-    gap: 1rem;
+    gap: $spacing-small;
     transition: color 0.3s ease-in-out;
+    padding: $spacing-small;
 
     & a {
-      font-size: 2.5rem;
+      font-size: $icon-size;
       color: rgba(#000, 0.55);
     }
 
@@ -71,6 +74,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: $spacing-small;
 
     @include respond-between(1375, 2361) {
       flex-wrap: nowrap;
@@ -98,33 +102,38 @@
       height: 2rem;
       width: 0.15rem;
       background-color: $primary-color;
-      margin-left: 1rem;
+      margin-left: $spacing-small;
 
       @include respond(tab-port) {
         height: 0.15rem;
-        width: 6rem;
+        width: 5rem;
         margin-left: 0;
-        margin-bottom: 1rem;
+        margin-bottom: $spacing-small;
       }
     }
 
     & li {
       list-style: none;
-      border-radius: 100%;
-      margin-left: 1rem;
+      border-radius: $border-radius;
+      margin-left: $spacing-small;
       padding: 0.6rem;
       background-color: #f7f5f5;
-      box-shadow: 0 0.3rem 0.3rem rgba(#000, 0.2),
-        0.3rem 0 0.3rem rgba(#000, 0.2);
+      box-shadow: $box-shadow;
+      @include tooltip;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
 
       @include respond(tab-port) {
-        margin-top: 1rem;
+        margin-top: $spacing-small;
       }
     }
 
     & li img {
-      height: 2.2rem;
-      width: 2.2rem;
+      height: $icon-size;
+      width: $icon-size;
       text-align: center;
     }
   }
@@ -151,28 +160,30 @@
   &__img {
     flex-basis: 30%;
     position: relative;
-    margin-left: 5rem;
+    margin-left: $spacing-large;
     width: 100%;
-    bottom: 11rem;
+    bottom: $spacing-xlarge;
 
     @include respond(big-desk) {
       flex-basis: 25%;
     }
 
     @include respond(tab-land) {
-      width: 50%;
+      width: 60%;
       margin: 0 auto;
-      bottom: 3rem;
+      bottom: $spacing-small;
     }
 
     @include respond(phone) {
-      bottom: 4rem;
+      bottom: $spacing-large;
       width: 100%;
-      margin: 11rem auto;
+      margin: $spacing-xlarge;
     }
 
     @include respond(iphone) {
-      margin-top: 5rem;
+      padding: 3rem 0rem;
+      top: 1rem;
+      margin-top: $spacing-medium;
     }
   }
 }
@@ -183,18 +194,20 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   overflow: hidden;
   border-radius: 60% 40%;
-  animation: morph 5s infinite, rainbow 15s linear infinite;
+  animation:
+    morph 5s infinite,
+    rainbow 15s linear infinite;
   opacity: 1;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   border: 6px solid rgb(0, 0, 0);
 
   @include respond(tab-port) {
     margin: 0 auto;
-    width: 25rem;
+    width: 20rem;
     height: 20rem;
   }
   @include respond(phone) {
@@ -202,7 +215,7 @@
     top: 0%;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 18rem;
+    width: 15rem;
     height: 15rem;
   }
 }
@@ -210,15 +223,15 @@
 // Image container styles
 .image {
   position: relative;
-  height: 28rem;
-  width: 25rem;
+  height: 25rem;
+  width: 20rem;
 
   @include respond(tab-port) {
-    bottom: 2rem;
+    bottom: $spacing-small;
   }
   @include respond(phone) {
-    width: 20rem;
-    bottom: 4rem;
+    width: 18rem;
+    bottom: $spacing-large;
     height: fit-content;
   }
 }

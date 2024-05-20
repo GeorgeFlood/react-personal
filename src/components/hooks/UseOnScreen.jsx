@@ -1,16 +1,14 @@
-// useOnScreen.js
 import { useState, useEffect } from "react";
 
 const useOnScreen = (ref, rootMargin = "0px") => {
   const [isIntersecting, setIntersecting] = useState(false);
-  const [animationPlayed, setAnimationPlayed] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (!animationPlayed && entry.isIntersecting) {
+        if (entry.isIntersecting) {
           setIntersecting(true);
-          setAnimationPlayed(true);
+          observer.unobserve(ref.current); // Unobserve after it becomes visible
         }
       },
       { rootMargin }
@@ -25,7 +23,7 @@ const useOnScreen = (ref, rootMargin = "0px") => {
         observer.unobserve(ref.current);
       }
     };
-  }, [ref, rootMargin, animationPlayed]);
+  }, [ref, rootMargin]);
 
   return isIntersecting;
 };

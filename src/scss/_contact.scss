@@ -10,6 +10,8 @@
   }
 
   &__intro {
+    text-align: center; // Center align the intro text for better visual balance
+
     & h3 {
       @include H3;
     }
@@ -28,12 +30,14 @@
 
 .container {
   display: flex;
-  height: 38rem;
+  height: auto; // Adjust height to be auto for better flexibility
   margin: 4rem auto;
+
   @include respond(phone) {
-    margin: 2rem 0 20rem 0;
+    margin: 2rem 0;
     flex-direction: column;
   }
+
   &__inputs {
     opacity: 0;
     display: flex;
@@ -42,105 +46,68 @@
     background-color: $background-color;
     flex-basis: 60%;
     box-shadow: 0 1rem 1rem rgba(#000, 0.2);
-  }
+    padding: 2rem; // Add padding for better spacing inside the container
 
-  &__firstLast {
-    display: flex;
-    align-content: center;
-    padding-top: 3rem;
-
-    @include respond(phone) {
-      flex-direction: column;
-    }
-
-    & input {
+    & input,
+    & textarea {
       width: 100%;
-      height: 3rem;
-      margin: 1rem 2rem;
-      border-radius: 0.2rem;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgba($text-color, 0.2);
       font-family: "Poppins", sans-serif;
-      padding: 0 1rem;
-      border: none;
-      border-bottom: 1px solid rgba(rgb(110, 110, 110), 0.5);
-      @include respond(phone) {
-        width: auto;
-        margin-bottom: 1rem;
+      font-size: 1rem;
+      transition:
+        border-color 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out;
+
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 5px rgba($primary-color, 0.5);
+        outline: none;
       }
 
       &::placeholder {
         color: rgba($text-color, 0.6);
-        font-weight: 700;
-      }
-    }
-  }
-
-  &__subjectMsg {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 0;
-    @include respond(phone) {
-      margin: 1rem 0rem;
-    }
-    & input {
-      height: 3rem;
-      margin: 0 2rem;
-      padding: 0 1rem;
-      border-radius: 0.2rem;
-      font-family: "Poppins", sans-serif;
-      background-color: none;
-      border: none;
-      border-bottom: 1px solid rgba(rgb(110, 110, 110), 0.5);
-
-      &::placeholder {
-        color: rgba($text-color, 0.6);
-        font-weight: 700;
+        font-weight: 400; // Adjust placeholder weight for better readability
       }
     }
 
     & textarea {
-      margin: 2rem 2rem 0 2rem;
-      height: 15rem;
-      border-radius: 0.2rem;
-      padding: 1rem 1rem;
-      border: none;
-      border-bottom: 1px solid rgba(rgb(110, 110, 110), 0.5);
-      font-family: "Poppins", sans-serif;
+      height: 10rem;
 
       @include respond(phone) {
-        height: 10rem;
-      }
-
-      &::placeholder {
-        color: rgba($text-color, 0.6);
-        font-weight: 700;
+        height: 8rem;
       }
     }
+
     & button {
-      margin: 1rem 2rem;
-      width: 20%;
-      height: 3rem;
+      width: 100%;
+      padding: 1rem;
       color: #fff;
       font-weight: 700;
       border: none;
-      border-radius: 0.4rem;
+      border-radius: 0.5rem;
       background: linear-gradient(
         to right,
         $primary-color,
         darken($primary-color, 20%)
       );
       box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.2);
-      transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      transition:
+        opacity 0.3s ease-in-out,
+        box-shadow 0.3s ease-in-out,
+        transform 0.3s ease-in-out;
       cursor: pointer;
-      @include respond(tab-port) {
-        width: 30%;
-      }
-      @include respond(phone) {
-        width: 35%;
-      }
 
       &:hover {
-        opacity: 0.6;
+        opacity: 0.8;
         box-shadow: none;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(2px);
       }
     }
   }
@@ -160,8 +127,8 @@
     box-shadow: 0.5rem 0 0.5rem rgba(#000, 0.4);
     margin: auto;
     border-radius: 0.5rem;
-    height: 105%;
-    flex-basis: 40%;
+    padding: 2rem; // Add padding for better spacing inside the container
+    flex-basis: 35%;
 
     @include respond(phone) {
       align-items: flex-start;
@@ -171,15 +138,11 @@
     }
 
     & h3 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       color: #fff;
-      text-align: left;
-      justify-content: flex-start;
-      align-items: flex-start;
-      align-content: flex-start;
-      justify-content: flex-start;
-      margin: 1rem;
+      text-align: center; // Center align the contact info heading for better visual balance
+      margin: 1rem 0;
 
       @include respond(phone) {
         margin-left: 2.5rem;
@@ -189,6 +152,7 @@
     &--svg {
       list-style: none;
       width: 100%;
+      margin-top: 2rem; // Add spacing between the heading and the contact details
     }
 
     .what {
@@ -197,6 +161,7 @@
       color: #fff;
       font-size: 1rem;
       font-weight: 700;
+      margin-bottom: 1rem; // Add spacing between the contact details
 
       @include respond(tab-port) {
         margin: 0 1rem;
@@ -210,10 +175,11 @@
 
       & li {
         padding: 1rem;
-        margin: 1rem;
+        margin: 0.5rem;
         background-color: rgba(white, 0.3);
         border: none;
-        box-shadow: 0 0.3rem 0.3rem rgba(rgb(0, 0, 0), 0.2),
+        box-shadow:
+          0 0.3rem 0.3rem rgba(rgb(0, 0, 0), 0.2),
           0.3rem 0 0.3rem rgba(rgb(0, 0, 0), 0.2);
         border-radius: 100%;
 

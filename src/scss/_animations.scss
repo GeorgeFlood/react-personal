@@ -51,40 +51,63 @@
   }
 }
 
-@keyframes fadeInLeft {
-  from {
+@keyframes fadeInSlideUp {
+  0% {
     opacity: 0;
-    transform: translateX(-60px);
+    transform: translateY(30px) scale(0.95);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0) scale(1);
   }
 }
 
-@keyframes fadeInRight {
-  from {
+@keyframes fadeInSlideDown {
+  0% {
     opacity: 0;
-    transform: translateX(60px);
+    transform: translateY(-30px) scale(0.95);
   }
-  to {
+  100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes fadeInSlideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
   }
 }
 
 .fade-in-left {
   opacity: 0;
-  animation-name: fadeInLeft;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation: fadeInSlideLeft 1s ease-out forwards;
 }
 
 .fade-in-right {
   opacity: 0;
-  animation-name: fadeInRight;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation: fadeInSlideRight 1s ease-out forwards;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
 }
 
 @keyframes morph {

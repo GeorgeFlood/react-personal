@@ -1,18 +1,25 @@
 .about {
   background-color: $secondary-background;
   display: flex;
-  padding: 5rem 0;
+  padding: $spacing-large 0;
 
   @include respond(tab-port) {
     flex-direction: column;
+    padding: $spacing-medium 0;
   }
 
   &__img {
     display: flex;
     flex-basis: 45%;
-
-    // text-align: right;
     margin: auto;
+    transition:
+      opacity 1s,
+      transform 1s;
+
+    @include respond(phone) {
+      height: fit-content;
+      width: 18rem;
+    }
   }
 
   &__info {
@@ -21,17 +28,21 @@
     flex-basis: 45%;
     margin: auto;
     animation-delay: 0.5s;
+    transition:
+      opacity 1s,
+      transform 1s;
 
     @include respond(tab-port) {
-      margin-top: 2rem;
+      margin-top: $spacing-medium;
       text-align: center;
     }
 
     & h3,
-    h4,
-    p {
+    & h4,
+    & p {
       margin-right: auto;
       width: 70%;
+      line-height: 1.6; // Improved line height for readability
 
       @include respond(big-desk) {
         width: 55%;
@@ -42,6 +53,7 @@
         text-align: center;
         width: 70%;
       }
+
       @include respond(phone) {
         width: 90%;
       }
@@ -49,30 +61,33 @@
 
     & h4 {
       @include H4;
+      margin-bottom: $spacing-small; // Added margin for spacing
     }
 
     & h3 {
       @include H3;
+      margin: $spacing-small 0; // Added margin for spacing
+
       @include respond(tab-port) {
-        margin: 1rem auto;
+        margin: $spacing-small auto;
       }
     }
 
     & p {
-      font-size: 1.15rem;
+      font-size: $font-size-small;
       @include ParagraphSpaceHeight;
       color: $text-color;
-      margin-bottom: 0.5rem;
+      margin-bottom: $spacing-small;
     }
   }
+
   &__btn {
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: space-around;
-    padding: 0 0.4rem;
-    height: 3.5rem;
-    width: 11rem;
+    padding: 0 0.8rem;
+    height: 4rem;
+    width: 12rem;
     background: linear-gradient(
       to right,
       $primary-color,
@@ -80,24 +95,27 @@
     );
     color: $background-color;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border: none;
-    border-radius: 0.3rem;
+    border-radius: 0.5rem;
     outline: 3px solid rgba($background-color, 1);
     outline-offset: 0.5rem;
     box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.25);
     margin-top: 1rem;
     cursor: pointer;
-    transition: box-shadow, 0.3s ease-in-out;
+    transition:
+      box-shadow 0.3s ease-in-out,
+      transform 0.3s ease-in-out;
 
     @include respond(tab-port) {
       margin: 2rem auto;
     }
 
     &:hover {
-      opacity: 0.6;
+      opacity: 0.8;
       outline-offset: 0rem;
       box-shadow: none;
+      transform: translateY(-2px);
     }
 
     &:active {
@@ -107,13 +125,16 @@
 
   &__img,
   &__info {
-    transition: opacity 1s, transform 1s;
+    transition:
+      opacity 1s,
+      transform 1s;
     opacity: 0;
   }
 }
 
 .btn-link {
   text-decoration: none;
+  color: inherit;
 }
 
 .downloadSVG {
@@ -123,9 +144,9 @@
 .img {
   margin-left: auto;
   height: 25rem;
-  border-radius: 0rem 4.25rem 0rem 4.25rem;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgba(#000, 0.35);
-  transition: translate 0.4s ease-in-out;
+  border-radius: 0 $border-radius 0 $border-radius;
+  box-shadow: $box-shadow;
+  transition: transform $transition-speed ease-in-out;
 
   @include respond(phone) {
     height: fit-content;
@@ -135,6 +156,5 @@
 
 .about__btn a {
   text-decoration: none;
-
   color: inherit;
 }

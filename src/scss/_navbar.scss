@@ -17,10 +17,15 @@
     a {
       color: inherit;
       text-decoration: none;
+
+      &:hover {
+        color: $secondary-color;
+      }
     }
 
-    &:hover {
+    &.active a {
       color: $secondary-color;
+      font-weight: bold;
     }
   }
 }
@@ -38,7 +43,9 @@
   top: -4rem;
   opacity: 0;
   visibility: hidden;
-  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out,
+  transition:
+    top 0.3s ease-in-out,
+    opacity 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
 
   &.visible {
@@ -49,5 +56,10 @@
 
   @include respond(tab-port) {
     display: none;
+  }
+
+  &__item.active a {
+    color: $secondary-color;
+    font-weight: bold;
   }
 }

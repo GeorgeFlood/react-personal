@@ -1,19 +1,21 @@
 .footer {
   display: flex;
+  flex-direction: row;
   background-color: $footer-color;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 2rem 4rem;
   color: #fff;
+  flex-wrap: wrap;
 
   @include respond(phone) {
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2rem 1rem;
   }
 
   @include respond(tab-port) {
-    justify-content: space-between;
     padding: 2rem 2rem;
   }
 
@@ -23,11 +25,26 @@
     @include respond(phone) {
       font-size: 0.8rem;
       margin-bottom: 1rem;
+      text-align: center;
     }
   }
 
-  &__link,
-  &__github {
+  &__icons {
+    display: flex;
+    gap: 1rem;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+  }
+
+  &__link {
     color: rgba(#fff, 1);
+    font-size: 2rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: lighten(#fff, 20%);
+    }
   }
 }

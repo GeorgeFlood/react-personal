@@ -5,9 +5,19 @@ import space from "../../Images/screenshots/space_compressed.jpg";
 import portfolio from "../../Images/screenshots/oldportfolio_compressed.jpg";
 import snapshot from "../../Images/screenshots/snapshot_compressed.jpg";
 import designo from "../../Images/screenshots/designo.jpg";
+import lootlookout from "../../images/screenshots/Loot-look-out.png";
 const Projects = () => {
   const projectData = [
-        {
+    {
+      imageSrc: `${lootlookout}`,
+      name: "Loot Look Out 💎 COMING SOON",
+      description:
+        "A full-stack web app designed for my Fortnite-obsessed nephew. The app collects email and desired skins, storing the data in MongoDB. It checks the Fortnite store API daily and sends email notifications if the desired skin is in stock. I handled both front-end and back-end development.",
+      tech: ["Node", "React", "Tailwind"],
+      githubLink: "https://github.com/GeorgeFlood/Designo",
+      liveDemoLink: "https://cozy-sprite-c52331.netlify.app/",
+    },
+    {
       imageSrc: `${designo}`,
       name: "Designo 🔨",
       description:
@@ -25,7 +35,7 @@ const Projects = () => {
       githubLink: "https://github.com/GeorgeFlood/snapshot-web",
       liveDemoLink: "https://george-photosnap.netlify.app/",
     },
-        {
+    {
       imageSrc: `${portfolio}`,
       name: "Old Portfolio 🎨",
       description:
@@ -34,7 +44,7 @@ const Projects = () => {
       githubLink: "https://github.com/GeorgeFlood/hello-world-portfolio",
       liveDemoLink: "https://georgeflood.github.io/hello-world-portfolio/",
     },
-        {
+    {
       imageSrc: `${space}`,
       name: "Space Tourism 🚀",
       description:
@@ -43,7 +53,7 @@ const Projects = () => {
       githubLink: "https://github.com/GeorgeFlood/space-tourism",
       liveDemoLink: "https://georgeflood.github.io/space-tourism/index.html",
     },
-      {
+    {
       imageSrc: `${dictionary}`,
       name: "Dictionary App 📚",
       description:

@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact" id="contact">
+    <section className="contact" id="contact">
       <div className="contact__intro">
         <h4>CONTACT</h4>
         <h3>Get in Touch! 👇</h3>
@@ -114,7 +114,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

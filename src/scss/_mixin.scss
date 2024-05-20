@@ -20,6 +20,50 @@
   transition: color 0.3s ease-in-out;
 }
 
+@mixin tooltip {
+  position: relative;
+
+  &::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 120%; // Position above the icon
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-bottom: 0.5rem; // Space between icon and tooltip
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0.5rem;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.75) transparent transparent transparent;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 @mixin H4 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -35,7 +79,8 @@
 @mixin CardContainer {
   position: relative;
   display: flex;
-  min-width: 55rem; /// THIS IS THE LINE THAT CHANGED FROM 100% TO 55REM!!!!!!!!!!!
+  flex-direction: column; // Ensure column layout by default for responsiveness
+  min-width: 55rem;
   min-height: 25rem;
   margin-top: 5rem;
   border-radius: 0.8rem;
@@ -80,7 +125,7 @@
   gap: 0.5rem;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem; // Slightly increased font size for better readability
   color: #000;
   transition: color 0.3s ease-in-out;
 }
@@ -97,21 +142,25 @@
       @content;
     }
   }
+
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) {
       @content;
     }
   }
+
   @if $breakpoint == tab-land {
     @media (max-width: 75em) {
       @content;
     }
   }
+
   @if $breakpoint == med-desk {
     @media (min-width: 74.375em) and (max-width: 85.9375em) {
       @content;
     }
   }
+
   @if $breakpoint == big-desk {
     @media (min-width: 112.5em) {
       @content;

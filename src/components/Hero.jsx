@@ -8,16 +8,18 @@ import sass from "../../images/sass.svg";
 import tailwind from "../../images/tailwind.svg";
 import Javascript from "../../images/javascript.svg";
 import react from "../../images/react.svg";
+import node from "../../Images/node-js.svg";
 
 const Hero = () => {
   return (
-    <div className="hero" id="home">
+    <section className="hero" id="home">
       <div className="hero__info">
         <h1>
-          Front-End React Developer <span className="hero__info--wave">👋</span>
+          Full-stack <br /> Developer{" "}
+          <span className="hero__info--wave">👋</span>
         </h1>
         <p>
-          Hi, I'm George Flood. A passionate Front-end Developer based in
+          Hi, I'm George Flood. A passionate Full-stack Developer based in
           London, England. 📍
         </p>
         <div className="hero__icons">
@@ -40,23 +42,26 @@ const Hero = () => {
           <p>Tech Stack</p>
           <span className="hero__tech--border"></span>
           <div className="hero__tech__mobile">
-            <li>
-              <img src={html} alt="HTML logo" title="HTML" />
+            <li title="HTML">
+              <img src={html} alt="HTML logo" />
             </li>
-            <li>
-              <img src={css} alt="CSS logo" title="CSS" />
+            <li title="CSS">
+              <img src={css} alt="CSS logo" />
             </li>
-            <li>
-              <img src={sass} alt="SASS logo" title="SCSS" />
+            <li title="SCSS">
+              <img src={sass} alt="SASS logo" />
             </li>
-            <li>
-              <img src={tailwind} alt="Tailwind logo" title="Tailwind" />
+            <li title="Tailwind">
+              <img src={tailwind} alt="Tailwind logo" />
             </li>
-            <li>
-              <img src={Javascript} alt="Javascript logo" title="Javascript" />
+            <li title="Javascript">
+              <img src={Javascript} alt="Javascript logo" />
             </li>
-            <li>
-              <img src={react} alt="React logo" title="React" />
+            <li title="React">
+              <img src={react} alt="React logo" />
+            </li>
+            <li title="Node.js">
+              <img src={node} alt="Node.js" />
             </li>
           </div>
         </div>
@@ -66,7 +71,7 @@ const Hero = () => {
           <img src={myImg} alt="George Flood" className="image" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
