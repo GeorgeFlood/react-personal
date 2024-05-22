@@ -182,7 +182,7 @@
 
     @include respond(iphone) {
       padding: 3rem 0rem;
-      top: 1rem;
+      top: 0.01rem;
       margin-top: $spacing-medium;
     }
   }

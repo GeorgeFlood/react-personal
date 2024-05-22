@@ -1,20 +1,45 @@
 .about {
+  position: relative; // Position the container relatively
   background-color: $secondary-background;
   display: flex;
   padding: $spacing-large 0;
+  overflow: hidden;
 
   @include respond(tab-port) {
     flex-direction: column;
     padding: $spacing-medium 0;
   }
 
+  // Pseudo-element for the background image
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+      url("../../Images/londonbanner.jpg") no-repeat center center;
+    background-size: cover;
+    opacity: 0.66; // Lowered opacity
+    z-index: 1;
+  }
+
+  &__img,
+  &__info {
+    position: relative;
+    z-index: 2; // Ensure content stays above the background image
+    transition:
+      opacity 1s,
+      transform 1s;
+    opacity: 0;
+  }
+
   &__img {
     display: flex;
     flex-basis: 45%;
     margin: auto;
-    transition:
-      opacity 1s,
-      transform 1s;
 
     @include respond(phone) {
       height: fit-content;
@@ -28,9 +53,6 @@
     flex-basis: 45%;
     margin: auto;
     animation-delay: 0.5s;
-    transition:
-      opacity 1s,
-      transform 1s;
 
     @include respond(tab-port) {
       margin-top: $spacing-medium;
@@ -57,6 +79,8 @@
       @include respond(phone) {
         width: 90%;
       }
+      // Add subtle text shadow for better readability
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
     & h4 {
@@ -122,14 +146,6 @@
       transform: translateY(2px);
     }
   }
-
-  &__img,
-  &__info {
-    transition:
-      opacity 1s,
-      transform 1s;
-    opacity: 0;
-  }
 }
 
 .btn-link {
@@ -144,8 +160,11 @@
 .img {
   margin-left: auto;
   height: 25rem;
-  border-radius: 0 $border-radius 0 $border-radius;
-  box-shadow: $box-shadow;
+  padding: 1rem; // Padding for matting effect
+  background-color: #fff; // Matting background color
+  border: 1rem solid #ccc; // Frame border
+  border-radius: 0.5rem; // Slightly rounded corners for the frame
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); // Enhanced shadow for framing effect
   transition: transform $transition-speed ease-in-out;
 
   @include respond(phone) {
