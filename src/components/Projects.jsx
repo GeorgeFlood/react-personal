@@ -14,7 +14,7 @@ const Projects = () => {
       subtitle: "A full-stack web app for time-sensitive deals.",
       description:
         "Created a full-stack application designed for users to find and share limited-time deals. Implemented real-time updates and developed efficient data handling to ensure users receive the most current information, with a responsive front-end design that ensures a seamless user experience.",
-      tech: ["Node", "React", "Tailwind"],
+      tech: ["MongoDB", "Express" "React", "Tailwind"],
       githubLink: "https://github.com/GeorgeFlood/Designo",
       liveDemoLink: "https://cozy-sprite-c52331.netlify.app/",
     },
