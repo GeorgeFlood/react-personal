@@ -14,7 +14,7 @@ const Projects = () => {
       subtitle: "A full-stack web app for time-sensitive deals.",
       description:
         "Created a full-stack application designed for users to find and share limited-time deals. Implemented real-time updates and developed efficient data handling to ensure users receive the most current information, with a responsive front-end design that ensures a seamless user experience.",
-      tech: ["MongoDB", "Express", "React", "Tailwind"],
+      tech: ["Node", "React", "Tailwind"],
       githubLink: "https://github.com/GeorgeFlood/Designo",
       liveDemoLink: "https://cozy-sprite-c52331.netlify.app/",
     },
@@ -33,7 +33,7 @@ const Projects = () => {
       name: "Snapshot 📸",
       subtitle: "A user-centric photo-sharing platform.",
       description:
-        "Built a platform where users can upload, share, and explore photos. Emphasized user experience and performance optimization by creating interactive user profiles and robust backend integration to support high traffic and data management.",
+        "Developed a user-friendly front-end for a platform where users can upload, share, and explore photos. Focused on creating interactive user profiles and a seamless design to enhance user experience.",
       tech: ["React", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/snapshot-web",
       liveDemoLink: "https://george-photosnap.netlify.app/",
@@ -43,7 +43,7 @@ const Projects = () => {
       name: "Old Portfolio 🎨",
       subtitle: "My previous portfolio showcasing my skills and projects.",
       description:
-        "Designed my initial portfolio to display my skills and past projects. Utilized modular SCSS for maintainability and interactive JavaScript components to enhance user interaction, focusing on an engaging and professional online presence.",
+        "Designed my initial portfolio to display my skills and past projects. Utilised modular SCSS for maintainability and interactive JavaScript components to enhance user interaction, focusing on an engaging and professional online presence.",
       tech: ["HTML", "Javascript", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/hello-world-portfolio",
       liveDemoLink: "https://georgeflood.github.io/hello-world-portfolio/",
