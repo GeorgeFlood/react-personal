@@ -518,7 +518,7 @@ body {
 }
 @media (max-width: 75em) {
   .hero__img {
-    width: 60%;
+    width: 45%;
     margin: 0 auto;
     bottom: 1rem;
   }
@@ -613,6 +613,11 @@ body {
   background-size: cover;
   opacity: 0.66;
   z-index: 1;
+}
+@media (min-width: 112.5em) {
+  .about::before {
+    background-position: bottom;
+  }
 }
 .about__img, .about__info {
   position: relative;
@@ -780,7 +785,7 @@ body {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2), 0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   transition: all 2s ease-in-out;
@@ -864,6 +869,12 @@ body {
   font-weight: 800;
   color: #0072b1;
   margin-bottom: 0.5rem;
+}
+.projects__container--info h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0.5rem 0 1rem 0;
 }
 .projects__container--info p {
   line-height: 1.4em;

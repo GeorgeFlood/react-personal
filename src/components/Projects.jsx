@@ -11,17 +11,19 @@ const Projects = () => {
     {
       imageSrc: `${lootlookout}`,
       name: "Loot Look Out 💎 COMING SOON",
+      subtitle: "A full-stack web app for time-sensitive deals.",
       description:
-        "A full-stack web app designed for my Fortnite-obsessed nephew. The app collects email and desired skins, storing the data in MongoDB. It checks the Fortnite store API daily and sends email notifications if the desired skin is in stock. I handled both front-end and back-end development.",
-      tech: ["Node", "React", "Tailwind"],
+        "Created a full-stack application designed for users to find and share limited-time deals. Implemented real-time updates and developed efficient data handling to ensure users receive the most current information, with a responsive front-end design that ensures a seamless user experience.",
+      tech: ["MongoDB", "Express", "React", "Tailwind"],
       githubLink: "https://github.com/GeorgeFlood/Designo",
       liveDemoLink: "https://cozy-sprite-c52331.netlify.app/",
     },
     {
       imageSrc: `${designo}`,
       name: "Designo 🔨",
+      subtitle: "An eye-catching portfolio for a creative agency.",
       description:
-        "Designo is an experienced creative agency focused on delivering custom web, app, and graphic design solutions. They emphasize strategic, agile methodologies and client collaboration to create impactful and meaningful digital branding experiences.",
+        "Designed and developed a modern portfolio focusing on visual appeal and user engagement. Integrated dynamic animations and intuitive user interfaces with smooth transitions to enhance user interaction.",
       tech: ["React", "CSS"],
       githubLink: "https://github.com/GeorgeFlood/Designo",
       liveDemoLink: "https://cozy-sprite-c52331.netlify.app/",
@@ -29,8 +31,9 @@ const Projects = () => {
     {
       imageSrc: `${snapshot}`,
       name: "Snapshot 📸",
+      subtitle: "A user-centric photo-sharing platform.",
       description:
-        "Snapshot is a robust web platform designed for photographers. It offers a subscription-based service enabling users to host and share their photography stories on custom domains. Designed with a fully responsive layout.",
+        "Built a platform where users can upload, share, and explore photos. Emphasized user experience and performance optimization by creating interactive user profiles and robust backend integration to support high traffic and data management.",
       tech: ["React", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/snapshot-web",
       liveDemoLink: "https://george-photosnap.netlify.app/",
@@ -38,8 +41,9 @@ const Projects = () => {
     {
       imageSrc: `${portfolio}`,
       name: "Old Portfolio 🎨",
+      subtitle: "My previous portfolio showcasing my skills and projects.",
       description:
-        "My previous portfolio reflecting creativity and skill. As a designer, I've adopted a modern, clean aesthetic to showcase work and improve user experience, showcasing my growth and adaptability.",
+        "Designed my initial portfolio to display my skills and past projects. Utilized modular SCSS for maintainability and interactive JavaScript components to enhance user interaction, focusing on an engaging and professional online presence.",
       tech: ["HTML", "Javascript", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/hello-world-portfolio",
       liveDemoLink: "https://georgeflood.github.io/hello-world-portfolio/",
@@ -47,8 +51,9 @@ const Projects = () => {
     {
       imageSrc: `${space}`,
       name: "Space Tourism 🚀",
+      subtitle: "A visually appealing space exploration site.",
       description:
-        "Uncover the universe with a captivating site that fuels your space cravings. Effortlessly explore the cosmos using eye-catching visuals and smooth navigation, showcasing limitless celestial escapades.",
+        "Developed a captivating website for space tourism, providing users with information and visuals about different celestial destinations. Implemented smooth navigation and eye-catching visual effects to enhance user engagement.",
       tech: ["HTML", "Javascript", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/space-tourism",
       liveDemoLink: "https://georgeflood.github.io/space-tourism/index.html",
@@ -56,8 +61,9 @@ const Projects = () => {
     {
       imageSrc: `${dictionary}`,
       name: "Dictionary App 📚",
+      subtitle: "A sleek dictionary app for quick word definitions.",
       description:
-        "Discover a swift Dictionary App for quick word definitions and noun forms. Try enhance your vocabulary and master English effortlessly with this handy pocket companion.",
+        "Created a dictionary application that allows users to quickly find definitions and expand their vocabulary. Integrated a third-party API for real-time data, with a modern, responsive interface for efficient data retrieval and display.",
       tech: ["React", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/dictionary-app",
       liveDemoLink: "https://georgeflood.github.io/dictionary-app/",
@@ -65,13 +71,13 @@ const Projects = () => {
     {
       imageSrc: `${signup}`,
       name: "Sign up Form ✍️",
+      subtitle: "A modern sign-up form for user registration.",
       description:
-        "Experience a sleek, modern sign-up form designed for user-friendliness. Streamline registration with this visually appealing and efficient solution, making signing up a breeze..",
+        "Developed an aesthetically pleasing and functional sign-up form focusing on form validation and user experience. Implemented smooth transitions to provide a user-friendly registration process.",
       tech: ["React", "SCSS"],
       githubLink: "https://github.com/GeorgeFlood/signup-react",
       liveDemoLink: "https://georgeflood.github.io/signup-react/",
     },
-    // Add more project data objects here
   ];
 
   return (
@@ -86,6 +92,7 @@ const Projects = () => {
           key={index}
           imageSrc={project.imageSrc}
           name={project.name}
+          subtitle={project.subtitle}
           description={project.description}
           tech={project.tech}
           githubLink={project.githubLink}

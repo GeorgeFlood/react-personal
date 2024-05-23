@@ -24,6 +24,10 @@
     background-size: cover;
     opacity: 0.66; // Lowered opacity
     z-index: 1;
+
+    @include respond(big-desk) {
+      background-position: bottom;
+    }
   }
 
   &__img,

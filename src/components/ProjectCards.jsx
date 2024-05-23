@@ -7,6 +7,7 @@ import useOnScreen from "./hooks/UseOnScreen.jsx";
 const ProjectCard = ({
   imageSrc,
   name,
+  subtitle,
   description,
   tech,
   githubLink,
@@ -43,6 +44,7 @@ const ProjectCard = ({
 
       <div className="projects__container--info">
         <h3>{name}</h3>
+        <h4>{subtitle}</h4>
         <p>{description}</p>
         <div className="projects__container--tech">{techItems}</div>
         <div className="projects__container--links">

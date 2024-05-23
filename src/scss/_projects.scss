@@ -15,9 +15,9 @@
   &__img {
     overflow: hidden;
     height: 100%;
-    background-size: cover;
+    background-size: cover; // Ensure the image covers the entire container
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top; // Center the image
     box-shadow: $box-shadow;
     border-radius: 0.5rem;
     transition: all 2s ease-in-out;
@@ -102,6 +102,13 @@
         font-weight: 800;
         color: $primary-color;
         margin-bottom: 0.5rem;
+      }
+
+      h4 {
+        font-size: 1.2rem; // Smaller font size for subtitle
+        font-weight: 400; // Lighter font weight
+        color: #666; // Different color for subtitle
+        margin: 0.5rem 0 1rem 0; // Space between subtitle and other elements
       }
 
       p {
