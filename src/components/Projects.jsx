@@ -15,8 +15,8 @@ const Projects = () => {
       description:
         "Created a full-stack application designed for users to find and share limited-time deals. Implemented real-time updates and developed efficient data handling to ensure users receive the most current information, with a responsive front-end design that ensures a seamless user experience.",
       tech: ["MongoDB", "Express", "React", "Tailwind"],
-      githubLink: "https://github.com/GeorgeFlood/Designo",
-      liveDemoLink: "https://cozy-sprite-c52331.netlify.app/",
+      githubLink: "https://github.com/GeorgeFlood/LootLookOut",
+      liveDemoLink: "",
     },
     {
       imageSrc: `${designo}`,
