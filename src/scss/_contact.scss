@@ -136,6 +136,9 @@
       top: 2rem;
       margin: 0;
     }
+    @include respond-between(1800, 1900) {
+      margin: auto auto auto 1rem;
+    }
 
     & h3 {
       font-size: 1.8rem;

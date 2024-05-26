@@ -770,14 +770,17 @@ body {
 }
 @media (max-width: 37.5em) {
   .projects {
-    margin: 5rem auto;
     width: 90%;
   }
 }
 @media (min-width: 112.5em) {
   .projects {
-    margin: 5rem auto;
     width: 55%;
+  }
+}
+@media (min-width: 1800px) and (max-width: 1900px) {
+  .projects {
+    width: 70%;
   }
 }
 .projects__img {
@@ -1074,6 +1077,11 @@ body {
     position: relative;
     top: 2rem;
     margin: 0;
+  }
+}
+@media (min-width: 1800px) and (max-width: 1900px) {
+  .container__info {
+    margin: auto auto auto 1rem;
   }
 }
 .container__info h3 {
