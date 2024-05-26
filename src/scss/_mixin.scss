@@ -79,7 +79,7 @@
 @mixin CardContainer {
   position: relative;
   display: flex;
-  flex-direction: column; // Ensure column layout by default for responsiveness
+  flex-direction: column;
   min-width: 55rem;
   min-height: 25rem;
   margin-top: 5rem;
@@ -125,7 +125,7 @@
   gap: 0.5rem;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem; // Slightly increased font size for better readability
+  font-size: 1.2rem;
   color: #000;
   transition: color 0.3s ease-in-out;
 }

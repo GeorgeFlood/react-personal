@@ -1,6 +1,6 @@
 .projects {
   margin: 5rem auto;
-  width: 75%;
+  width: 85%;
 
   @include respond(phone) {
     margin: 5rem auto;
@@ -9,15 +9,16 @@
 
   @include respond(big-desk) {
     margin: 5rem auto;
-    width: 50%;
+    width: 55%;
   }
 
   &__img {
     overflow: hidden;
     height: 100%;
+    width: 100%;
     background-size: cover; // Ensure the image covers the entire container
     background-repeat: no-repeat;
-    background-position: top; // Center the image
+    background-position: top center; // Center the image
     box-shadow: $box-shadow;
     border-radius: 0.5rem;
     transition: all 2s ease-in-out;

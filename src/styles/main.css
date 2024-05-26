@@ -1,28 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
 @keyframes rainbow {
   0% {
-    border-color: #ff7f50;
+    border-color: #e34f26;
   }
   14% {
-    border-color: #ffae88;
+    border-color: #1572b6;
   }
   28% {
-    border-color: #ff563b;
+    border-color: #cc6699;
   }
   42% {
-    border-color: #0f52f9;
+    border-color: #38b2ac;
   }
   57% {
-    border-color: #3d89f9;
+    border-color: #f7df1e;
   }
   71% {
-    border-color: #81a8f9;
+    border-color: #61dafb;
   }
   85% {
-    border-color: #ffc97e;
+    border-color: #68a063;
   }
   100% {
-    border-color: #ff7f50;
+    border-color: #e34f26;
   }
 }
 @keyframes wave-animation {
@@ -766,7 +766,7 @@ body {
 
 .projects {
   margin: 5rem auto;
-  width: 75%;
+  width: 85%;
 }
 @media (max-width: 37.5em) {
   .projects {
@@ -777,15 +777,16 @@ body {
 @media (min-width: 112.5em) {
   .projects {
     margin: 5rem auto;
-    width: 50%;
+    width: 55%;
   }
 }
 .projects__img {
   overflow: hidden;
   height: 100%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
   box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2), 0.3rem 0 0.3rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   transition: all 2s ease-in-out;
