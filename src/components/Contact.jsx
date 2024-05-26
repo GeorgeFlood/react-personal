@@ -31,13 +31,13 @@ const Contact = () => {
       (response) => {
         setStatusMessage({
           success: true,
-          message: "Email sent successfully!",
+          message: "Email sent! Thanks 😃",
         });
       },
       (error) => {
         setStatusMessage({
           success: false,
-          message: "Failed to send email. Please try again later.",
+          message: "Whoops! That didn't send 🤕",
         });
         console.error("EmailJS error:", error);
       }
