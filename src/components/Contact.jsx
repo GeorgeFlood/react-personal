@@ -1,12 +1,15 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-emailjs.init("E2B1U5osr1KuFpbk3");
 import location from "../../Images/location.svg";
 import email from "../../Images/email.svg";
 import phone from "../../Images/phone.svg";
 import useOnScreen from "./hooks/UseOnScreen.jsx";
 
+// Initialize EmailJS with your User ID (public key)
+emailjs.init("aoXWghmqh7vq9XXQx");
+
 const Contact = () => {
+  const [statusMessage, setStatusMessage] = useState(null);
   const containerRef = useRef(null);
   const containerVisible = useOnScreen(containerRef, "0px 0px -300px 0px");
 
@@ -18,17 +21,27 @@ const Contact = () => {
   const sendMail = (e) => {
     e.preventDefault();
 
-    let params = {
-      name: firstNameRef.current.value + " " + lastNameRef.current.value,
+    const templateParams = {
+      name: `${firstNameRef.current.value} ${lastNameRef.current.value}`, // Match the placeholder in your template
       subject: subjectRef.current.value,
       message: messageRef.current.value,
     };
 
-    emailjs
-      .send("service_87zdrt4", "template_q5c3dnf", params)
-      .then(function (res) {
-        alert("success " + res.status);
-      });
+    emailjs.send("service_vftwtjy", "template_q5c3dnf", templateParams).then(
+      (response) => {
+        setStatusMessage({
+          success: true,
+          message: "Email sent successfully!",
+        });
+      },
+      (error) => {
+        setStatusMessage({
+          success: false,
+          message: "Failed to send email. Please try again later.",
+        });
+        console.error("EmailJS error:", error);
+      }
+    );
   };
 
   return (
@@ -40,9 +53,7 @@ const Contact = () => {
 
       <div className="container" ref={containerRef}>
         <div
-          className={`container__inputs ${
-            containerVisible ? "fade-in-left" : ""
-          }`}
+          className={`container__inputs ${containerVisible ? "fade-in-left" : ""}`}
         >
           <form onSubmit={sendMail}>
             <div className="container__firstLast">
@@ -52,6 +63,7 @@ const Contact = () => {
                 name="first-name"
                 placeholder="First Name"
                 ref={firstNameRef}
+                required
               />
               <input
                 type="text"
@@ -59,6 +71,7 @@ const Contact = () => {
                 name="last-name"
                 placeholder="Last Name"
                 ref={lastNameRef}
+                required
               />
             </div>
             <div className="container__subjectMsg">
@@ -68,6 +81,7 @@ const Contact = () => {
                 name="subject"
                 placeholder="Subject"
                 ref={subjectRef}
+                required
               />
               <textarea
                 id="message"
@@ -75,15 +89,21 @@ const Contact = () => {
                 placeholder="Message"
                 rows="5"
                 ref={messageRef}
+                required
               ></textarea>
               <button type="submit">Send message</button>
             </div>
           </form>
+          {statusMessage && (
+            <div
+              className={`status-message ${statusMessage.success ? "success" : "error"}`}
+            >
+              {statusMessage.message}
+            </div>
+          )}
         </div>
         <div
-          className={`container__info ${
-            containerVisible ? "fade-in-right" : ""
-          }`}
+          className={`container__info ${containerVisible ? "fade-in-right" : ""}`}
         >
           <div>
             <h3>Contact info</h3>

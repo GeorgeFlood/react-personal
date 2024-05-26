@@ -10,7 +10,7 @@
   }
 
   &__intro {
-    text-align: center; // Center align the intro text for better visual balance
+    text-align: center;
 
     & h3 {
       @include H3;
@@ -30,7 +30,7 @@
 
 .container {
   display: flex;
-  height: auto; // Adjust height to be auto for better flexibility
+  height: auto;
   margin: 4rem auto;
 
   @include respond(phone) {
@@ -46,7 +46,7 @@
     background-color: $background-color;
     flex-basis: 60%;
     box-shadow: 0 1rem 1rem rgba(#000, 0.2);
-    padding: 2rem; // Add padding for better spacing inside the container
+    padding: 2rem;
 
     & input,
     & textarea {
@@ -69,7 +69,7 @@
 
       &::placeholder {
         color: rgba($text-color, 0.6);
-        font-weight: 400; // Adjust placeholder weight for better readability
+        font-weight: 400;
       }
     }
 
@@ -110,6 +110,26 @@
         transform: translateY(2px);
       }
     }
+
+    .status-message {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      text-align: center;
+
+      &.success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+
+      &.error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+    }
   }
 
   &__info {
@@ -120,14 +140,13 @@
     justify-content: center;
     background: linear-gradient(
       to top right,
-      $secondary-color,
-      80%,
+      $secondary-color 80%,
       darken($secondary-color, 25%) 20%
     );
     box-shadow: 0.5rem 0 0.5rem rgba(#000, 0.4);
     margin: auto;
     border-radius: 0.5rem;
-    padding: 2rem; // Add padding for better spacing inside the container
+    padding: 2rem;
     flex-basis: 35%;
 
     @include respond(phone) {
@@ -144,7 +163,7 @@
       font-size: 1.8rem;
       font-weight: 700;
       color: #fff;
-      text-align: center; // Center align the contact info heading for better visual balance
+      text-align: center;
       margin: 1rem 0;
 
       @include respond(phone) {
@@ -155,7 +174,7 @@
     &--svg {
       list-style: none;
       width: 100%;
-      margin-top: 2rem; // Add spacing between the heading and the contact details
+      margin-top: 2rem;
     }
 
     .what {
@@ -164,7 +183,7 @@
       color: #fff;
       font-size: 1rem;
       font-weight: 700;
-      margin-bottom: 1rem; // Add spacing between the contact details
+      margin-bottom: 1rem;
 
       @include respond(tab-port) {
         margin: 0 1rem;

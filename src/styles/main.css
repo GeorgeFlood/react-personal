@@ -1058,13 +1058,30 @@ body {
 .container__inputs button:active {
   transform: translateY(2px);
 }
+.container__inputs .status-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.container__inputs .status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+.container__inputs .status-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
 .container__info {
   opacity: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top right, #3d89f9, 80%, #054bb1 20%);
+  background: linear-gradient(to top right, #3d89f9 80%, #054bb1 20%);
   box-shadow: 0.5rem 0 0.5rem rgba(0, 0, 0, 0.4);
   margin: auto;
   border-radius: 0.5rem;
