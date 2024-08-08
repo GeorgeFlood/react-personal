@@ -2,7 +2,7 @@ import { useRef } from "react";
 import myImg from "../../Images/aboutme.jpg";
 import download from "../../Images/download.svg";
 import useOnScreen from "./hooks/UseOnScreen.jsx";
-const cvUrl = "/GeorgeFlood_CV.docx";
+const cvUrl = "../../public/GeorgeFlood_CV.docx";
 
 const About = () => {
   const aboutRef = useRef(null);
